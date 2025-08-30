@@ -10,6 +10,10 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/snake.svg" alt="GitHub contribution snake" />
+</div>
+
+<div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>
 

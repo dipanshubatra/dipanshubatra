@@ -1,0 +1,50 @@
+name: Generate Snake
+
+on:
+  workflow_dispatch:   # run manually from Actions tab
+  schedule:
+    - cron: '0 0 * * *'   # optional: daily at 00:00 UTC (you can change/remove)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
+        with:
+          github_user_name: dipanshubatra
+          outputs: dist/snake.svg
+
+      - name: Commit and push to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # If output branch exists, switch to it; otherwise create orphan branch
+          if git ls-remote --exit-code --heads origin output; then
+            git checkout output
+            git rm -rf .
+          else
+            git checkout --orphan output
+            git reset --hard
+          fi
+
+          # copy generated files from dist to repo root
+          mkdir -p dist || true
+          cp -r dist/* . || true
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update snake.svg [skip ci]"
+            git push origin output --force
+          fi

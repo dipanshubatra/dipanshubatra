@@ -1,9 +1,9 @@
-name: Generate Snake
+name: Generate 3D Gradient Snake
 
 on:
   workflow_dispatch:   # run manually from Actions tab
   schedule:
-    - cron: '0 0 * * *'   # optional: daily at 00:00 UTC (you can change/remove)
+    - cron: '0 0 * * *'   # runs daily at 00:00 UTC
 
 jobs:
   build:
@@ -14,11 +14,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate snake.svg
+      - name: Generate 3D Gradient Snake
         uses: Platane/snk@v3
         with:
           github_user_name: dipanshubatra
           outputs: dist/snake.svg
+          shape: cube        # makes it 3D blocks
+          theme: gradient    # rainbow gradient colors
 
       - name: Commit and push to output branch
         env:
@@ -28,7 +30,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # If output branch exists, switch to it; otherwise create orphan branch
+          # Switch to output branch (create if doesn't exist)
           if git ls-remote --exit-code --heads origin output; then
             git checkout output
             git rm -rf .
@@ -37,14 +39,13 @@ jobs:
             git reset --hard
           fi
 
-          # copy generated files from dist to repo root
-          mkdir -p dist || true
-          cp -r dist/* . || true
+          # Copy generated snake.svg
+          cp -r dist/* .
 
           git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update snake.svg [skip ci]"
+            git commit -m "Update 3D gradient snake [skip ci]"
             git push origin output --force
           fi

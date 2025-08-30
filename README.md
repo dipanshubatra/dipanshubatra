@@ -9,9 +9,7 @@
 ![GitHub Streak](https://streak-stats.demolab.com?user=dipanshubatra&theme=radical&date_format=M%20j%5B,%20Y%5D)<br/>
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/snake.svg" alt="GitHub contribution snake" />
-</div>
+
 
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />

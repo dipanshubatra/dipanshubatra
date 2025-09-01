@@ -1,7 +1,27 @@
-## 🌐 Connect with Me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/dipanshubatra)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/dipanshubatra)
+## ✨ About Me
+Hi! I'm **Dipanshu Batra** – currently pursuing **B.Tech in Computer Science and Engineering at JMIT**.  
+
+I am deeply passionate about **Artificial Intelligence, Cybersecurity, and Engineering AI-driven solutions**.  
+I love exploring **hackathons, security challenges, and real-world projects** that push me to think outside the box.  
+
+My ultimate goal is to become a **Cybersecurity Specialist**, building secure and intelligent systems for the future. 🚀  
+
+- 🔭 Currently working on **Cloud Security projects & AI tools**
+- 🌱 Learning **Advanced Python, Networking, and AI Security**
+- 👯 Excited to join **Hackathons & Collaborations**
+- 💬 Ask me about **Cybersecurity, Python, AI/ML, and Open-Source Contributions**
+- ⚡ Fun fact: I enjoy making **interactive & animated GitHub READMEs!**
+
+---
+
+<div align="center"> <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" /> </div>
+
+---
+
+# 📊 GitHub Stats:
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=radical)
+![GitHub Streak](https://streak-stats.demolab.com?user=dipanshubatra&theme=radical&date_format=M%20j%5B,%20Y%5D)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
 
 ---
 
@@ -30,27 +50,13 @@
 ![SQL](https://img.shields.io/badge/SQL-Basics-lightgrey)
 ![Linux](https://img.shields.io/badge/Linux-Basics%20%26%20Security-black)
 
----
-
-# 📊 GitHub Stats:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=radical)
-![GitHub Streak](https://streak-stats.demolab.com?user=dipanshubatra&theme=radical&date_format=M%20j%5B,%20Y%5D)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
-
----
-<div align="center"> <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" /> </div>
 
 ---
 
-## ✨ About Me
-Hi! I'm **Dipanshu Batra** – a passionate developer into **Cloud Security, AI/ML, and full-stack development**.  
-I love **building tools, GUIs, and projects** that solve real-world problems. 🚀  
-
-- 🔭 Currently working on **Cloud Security projects & GUI tools**
-- 🌱 Learning **Advanced Python, Networking, AI Security**
-- 👯 Open to **collaborations & hackathons**
-- 💬 Ask me about **Python, Cybersecurity, AI, GitHub automation**
-- ⚡ Fun fact: I love making **GitHub READMEs interactive with animations!**
+## 🌐 Connect with Me:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/dipanshubatra)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/dipanshubatra)
 
 ---
 

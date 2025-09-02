@@ -6,7 +6,7 @@ I love exploring **hackathons, security challenges, and real-world projects** th
 
 My ultimate goal is to become a **Cybersecurity Specialist**, building secure and intelligent systems for the future. 🚀  
 
-- 🔭 Currently working on **Cloud Security projects & AI tools**
+- 🔭 Currently working on **Security projects & AI tools**
 - 🌱 Learning **Advanced Python, Networking, and AI Security**
 - 👯 Excited to join **Hackathons & Collaborations**
 - 💬 Ask me about **Cybersecurity, Python, AI/ML, and Open-Source Contributions**

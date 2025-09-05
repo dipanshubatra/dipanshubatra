@@ -1,4 +1,4 @@
-## ✨ About Me
+## ✨ About M
 Hi! I'm **Dipanshu Batra** – currently pursuing **B.Tech in Computer Science and Engineering at JMIT**.  
 
 I am deeply passionate about **Artificial Intelligence, Cybersecurity, and Engineering AI-driven solutions**.  

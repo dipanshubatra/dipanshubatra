@@ -28,7 +28,7 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 
 <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=mattral" alt="activity-graph" width="100%">
 
-<img align="center" src="assets/banner3.gif" alt="banner">
+
 
 ---
 

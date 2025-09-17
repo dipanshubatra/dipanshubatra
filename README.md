@@ -26,10 +26,6 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 ---
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
 
-<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=mattral" alt="activity-graph" width="100%">
-
-
-
 ---
 
 # 💻 Tech Stack & Skills:

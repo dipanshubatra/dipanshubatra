@@ -64,6 +64,13 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
+
+<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=mattral" alt="activity-graph" width="100%">
+
+<img align="center" src="assets/banner3.gif" alt="banner">
+
+---
 
 ### 🔝 Top Contributed Repositories
 ![](https://github-contributor-stats.vercel.app/api?username=dipanshubatra&limit=5&theme=radical&combine_all_yearly_contributions=true)

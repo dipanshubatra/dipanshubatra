@@ -20,7 +20,6 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 
 # 📊 GitHub Stats:
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=radical)
-![GitHub Streak](https://streak-stats.demolab.com?user=dipanshubatra&theme=radical&date_format=M%20j%5B,%20Y%5D)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
 
 ---

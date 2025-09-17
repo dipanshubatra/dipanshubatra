@@ -24,6 +24,13 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=radical)
 
 ---
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
+
+<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=mattral" alt="activity-graph" width="100%">
+
+<img align="center" src="assets/banner3.gif" alt="banner">
+
+---
 
 # 💻 Tech Stack & Skills:
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
@@ -62,13 +69,6 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 
 ### ✍️ Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
----
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
-
-<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=mattral" alt="activity-graph" width="100%">
-
-<img align="center" src="assets/banner3.gif" alt="banner">
 
 ---
 

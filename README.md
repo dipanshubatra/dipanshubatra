@@ -54,6 +54,11 @@ My ultimate goal is to become a **Cybersecurity Specialist**, building secure an
 
 
 ---
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Dipanshu+Batra;I+love+DSA+and+LeetCode;Check+out+my+LeetCode+stats+below!)](https://leetcode.com/dipanshubatra)
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
+
+---
 
 ## 🌐 Connect with Me:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)

@@ -2,7 +2,7 @@
 Hi! I'm **Dipanshu Batra** – currently pursuing **B.Tech in Computer Science and Engineering at JMIT**.  
 
 I am deeply passionate about **Artificial Intelligence, Cybersecurity, and Engineering AI-driven solutions**.  
-I love exploring **hackathons, security challenges, and real-world projects** that push me to think outside the box. 
+I love exploring **hackathons, security challenges, and real-world projects** that push me to thin outside the box. 
 
 My ultimate goal is to become a **Cybersecurity Specialist**, building secure and intelligent systems for the future. 🚀  
 

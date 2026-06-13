@@ -82,10 +82,8 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 ## Backend & APIs
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge)
-
-## Frontend (Foundational)
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ## Databases
 ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -100,21 +98,9 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 ## Data Structures & Problem Solving
 ![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-0A0A0A?style=for-the-badge)
 
-## AI / ML
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=white)
-
-## Cybersecurity & Networking
-![Socket Programming](https://img.shields.io/badge/Socket%20Programming-Python-blue?style=for-the-badge)
-![Network Security](https://img.shields.io/badge/Network%20Security-Traffic%20Analysis-green?style=for-the-badge)
-![Selenium](https://img.shields.io/badge/Selenium-%23D3D3D3.svg?style=for-the-badge)
-
 ---
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+%2B+Spring+Boot+Developer;Building+Scalable+Systems;System+Design+Enthusiast;AWS+%E2%80%A2+Docker+%E2%80%A2+Redis;Open+To+Internships)](https://leetcode.com/dipanshubatra)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+Spring+Boot+Developer;System+Design+%26+Distributed+Systems;Building+Production+Ready+APIs;AWS+%E2%80%A2+Docker+%E2%80%A2+Redis;Open+To+Software+Engineering+Internships)](https://leetcode.com/dipanshubatra)
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
 
@@ -141,6 +127,6 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 
 ---
 
-*Building software that solves real problems, scales reliably, and survives production.*
+*Building scalable backend systems, production-ready APIs, and software engineered for real-world impact.*
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

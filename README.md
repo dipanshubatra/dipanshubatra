@@ -1,30 +1,68 @@
-## ✨ About Me
+## 🚀 Backend Engineer | Java Developer | Spring Boot Developer
 
-I’m **Dipanshu Batra**, a **Computer Science Engineering student**, **Hackathon Winner** (IIIT Delhi, NIT Durgapur), **3× Hackathon Finalist**, and an **Oracle Certified AI Foundation Associate**, with a strong focus on **backend engineering, system design, and real-world problem solving**. I’ve also mentored **500+ students** in technology and problem-solving.
+I'm **Dipanshu Batra**, a **Computer Science Engineering Student**, **Backend Engineer**, and **Java Developer** focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
 
-I primarily work as a **Backend Developer** using **Java & Spring Boot**, building **scalable, secure, and production-oriented applications**. Alongside backend development, I actively practice **Data Structures & Algorithms (DSA)**, explore **cloud and containerized systems (AWS, Docker)**, and integrate **AI/ML concepts** where they add real, practical value.
+I specialize in **Java**, **Spring Boot**, **System Design**, **API Development**, **Database Engineering**, and **Cloud Technologies**, with hands-on experience building secure and scalable applications using modern software engineering practices.
 
-### Technical Stack & Interests
-- **Backend Development:** Java, Spring Boot, REST APIs  
-- **Programming:** Java, Python, C, JavaScript  
-- **Core CS:** Data Structures & Algorithms (DSA)  
-- **Cloud & DevOps Basics:** AWS, Docker, Linux  
-- **AI/ML Fundamentals:** scikit-learn  
-- **Cybersecurity Exposure:** Socket programming, port scanning, packet analysis  
-
-### Experience & Achievements
-- 🏆 **Hackathon Winner** at national-level competitions (IIIT Delhi, NIT Durgapur)  
-- 🚀 **Finalist** at ByteVerse Hackathon (Open Innovation category)  
-- Built **backend platforms, security tools, and full-stack prototypes** under strict time constraints  
-- **Campus Ambassador** at IIT Delhi and IIT Mandi, actively involved in tech outreach and coordination  
-
-I actively participate in **hackathons, internships, and open-source learning** to sharpen **system thinking, teamwork, and execution speed**. I’m driven by building **things that actually work — not just demos**.
-
-🌍 **Open to Backend / Software Engineering internships, hackathons, and collaborative tech projects.**
+- 🔭 Building scalable backend systems and REST APIs
+- 🌱 Currently deepening knowledge in **System Design & Distributed Systems**
+- ☁️ Exploring **AWS, Docker & Cloud Infrastructure**
+- 🧠 Actively solving **Data Structures & Algorithms**
+- 🚀 Open to **Software Engineering & Backend Internships**
 
 ---
 
-<div align="center"> <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" /> </div>
+### 🎯 Primary Focus Areas
+
+- Backend Engineering
+- Java Development
+- Spring Boot Applications
+- REST API Development
+- Authentication & Authorization (JWT)
+- Redis Caching
+- Microservices Architecture
+- System Design & Distributed Systems
+- Cloud Computing (AWS)
+- Docker & Containerization
+- Linux Systems
+- Data Structures & Algorithms
+- Software Architecture
+
+---
+
+### 🏆 Achievements
+
+- 🥇 **National-Level Hackathon Winner** — IIIT Delhi, NIT Durgapur
+- 🚀 **3× Hackathon Finalist** — including ByteVerse (Open Innovation)
+- 🤖 **Oracle Certified AI Foundation Associate**
+- 👨‍🏫 **Mentored 500+ Students** in Technology & Problem Solving
+- 🎓 **Campus Ambassador** at IIT Delhi & IIT Mandi
+- ⚡ Built backend platforms, security tools, and full-stack prototypes under strict deadlines
+
+---
+
+### 💡 What I Build
+
+- Scalable Backend Systems
+- Enterprise Java Applications
+- Secure Authentication & Authorization Systems
+- RESTful APIs
+- Distributed Applications
+- Cloud-Native Solutions
+- Developer Tools
+- Performance-Focused Software
+
+---
+
+### 🔍 Keywords
+
+`Java Developer` • `Backend Engineer` • `Software Engineer` • `Spring Boot Developer` • `REST API Developer` • `System Design` • `Microservices` • `Distributed Systems` • `AWS` • `Docker` • `Redis` • `MongoDB` • `SQL` • `Authentication` • `JWT` • `Backend Development` • `API Development` • `Cloud Computing` • `Linux` • `Software Architecture` • `Data Structures` • `Algorithms` • `Problem Solving` • `Competitive Programming` • `Open Source`
+
+---
+
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
 
 ---
 
@@ -74,10 +112,9 @@ I actively participate in **hackathons, internships, and open-source learning** 
 ![Network Security](https://img.shields.io/badge/Network%20Security-Traffic%20Analysis-green?style=for-the-badge)
 ![Selenium](https://img.shields.io/badge/Selenium-%23D3D3D3.svg?style=for-the-badge)
 
-
-
 ---
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Dipanshu+Batra;I+love+DSA+and+LeetCode;Check+out+my+LeetCode+stats+below!)](https://leetcode.com/dipanshubatra)
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+%2B+Spring+Boot+Developer;Building+Scalable+Systems;System+Design+Enthusiast;AWS+%E2%80%A2+Docker+%E2%80%A2+Redis;Open+To+Internships)](https://leetcode.com/dipanshubatra)
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
 
@@ -103,5 +140,7 @@ I actively participate in **hackathons, internships, and open-source learning** 
 [![](https://visitcount.itsvg.in/api?id=dipanshubatra&icon=0&color=0)](https://visitcount.itsvg.in)
 
 ---
+
+*Building software that solves real problems, scales reliably, and survives production.*
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

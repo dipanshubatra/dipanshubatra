@@ -1,132 +1,91 @@
-## 🚀 Backend Engineer | Java Developer | Spring Boot Developer
-
-I'm **Dipanshu Batra**, a **Computer Science Engineering Student**, **Backend Engineer**, and **Java Developer** focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
-
-I specialize in **Java**, **Spring Boot**, **System Design**, **API Development**, **Database Engineering**, and **Cloud Technologies**, with hands-on experience building secure and scalable applications using modern software engineering practices.
-
-- 🔭 Building scalable backend systems and REST APIs
-- 🌱 Currently deepening knowledge in **System Design & Distributed Systems**
-- ☁️ Exploring **AWS, Docker & Cloud Infrastructure**
-- 🧠 Actively solving **Data Structures & Algorithms**
-- 🚀 Open to **Software Engineering & Backend Internships**
-
----
-
-### 🎯 Primary Focus Areas
-
-- Backend Engineering
-- Java Development
-- Spring Boot Applications
-- REST API Development
-- Authentication & Authorization (JWT)
-- Redis Caching
-- Microservices Architecture
-- System Design & Distributed Systems
-- Cloud Computing (AWS)
-- Docker & Containerization
-- Linux Systems
-- Data Structures & Algorithms
-- Software Architecture
-
----
-
-### 🏆 Achievements
-
-- 🥇 **National-Level Hackathon Winner** — IIIT Delhi, NIT Durgapur
-- 🚀 **3× Hackathon Finalist** — including ByteVerse (Open Innovation)
-- 🤖 **Oracle Certified AI Foundation Associate**
-- 👨‍🏫 **Mentored 500+ Students** in Technology & Problem Solving
-- 🎓 **Campus Ambassador** at IIT Delhi & IIT Mandi
-- ⚡ Built backend platforms, security tools, and full-stack prototypes under strict deadlines
-
----
-
-### 💡 What I Build
-
-- Scalable Backend Systems
-- Enterprise Java Applications
-- Secure Authentication & Authorization Systems
-- RESTful APIs
-- Distributed Applications
-- Cloud-Native Solutions
-- Developer Tools
-- Performance-Focused Software
-
----
-
-### 🔍 Keywords
-
-`Java Developer` • `Backend Engineer` • `Software Engineer` • `Spring Boot Developer` • `REST API Developer` • `System Design` • `Microservices` • `Distributed Systems` • `AWS` • `Docker` • `Redis` • `MongoDB` • `SQL` • `Authentication` • `JWT` • `Backend Development` • `API Development` • `Cloud Computing` • `Linux` • `Software Architecture` • `Data Structures` • `Algorithms` • `Problem Solving` • `Competitive Programming` • `Open Source`
-
----
-
 <div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=500&color=00FF88&center=true&vCenter=true&width=800&lines=Java+Backend+Engineer;Production-Grade+Backend+Systems;Spring+Boot+%2B+REST+APIs;Secure+Authentication;Performance+Engineering;Scalable+Architecture)](https://github.com/dipanshubatra)
+
 </div>
 
 ---
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
+## 🏆 Engineering Impact
+
+🥇 **National Hackathon Winner** — TechFrontier 2025 (IIIT Delhi)  
+🚀 **Built Production-Ready Applications** — Tested under load, deployed to production  
+⚡ **200+ LeetCode Problems Solved** — Strong algorithmic foundation  
 
 ---
 
-# 💻 Tech Stack & Skills
+## 👨‍💻 About
 
-## Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+Java Backend Engineer building **secure, scalable, and production-grade backend systems**. I engineer high-performance REST APIs, implement enterprise authentication patterns, and architect distributed systems that handle real-world traffic.
 
-## Backend & APIs
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-## Databases
-![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-005C84?style=for-the-badge)
-
-## Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-
-## Data Structures & Problem Solving
-![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-0A0A0A?style=for-the-badge)
+**Engineering Focus:**
+- Production-Grade Backend Systems with Spring Boot
+- Secure REST APIs with JWT + OAuth2
+- Performance Engineering with Redis Caching
+- Scalable Architecture with PostgreSQL + Docker
+- Rate Limiting & RBAC for API security
 
 ---
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+Spring+Boot+Developer;System+Design+%26+Distributed+Systems;Building+Production+Ready+APIs;AWS+%E2%80%A2+Docker+%E2%80%A2+Redis;Open+To+Software+Engineering+Internships)](https://leetcode.com/dipanshubatra)
+## 🚀 Flagship Project: NovaMart
+
+Production-grade e-commerce backend engineered for **security, scalability, and performance**.
+
+### Architecture
+- **JWT + OAuth2 Authentication** with refresh token rotation
+- **Redis Cache-Aside Pattern** for sub-millisecond retrieval
+- **RBAC** for role-based access control
+- **Bucket4j Rate Limiting** to prevent API abuse
+- **Docker Deployment** with multi-stage builds
+
+### Load Test Results
+<div align="center">
+
+| Metric | Value |
+|--------|-------|
+| Concurrent Requests | **5,250+** |
+| Error Rate | **0%** |
+| Average Latency | **182ms** |
+| P95 Latency | **326ms** |
+
+</div>
+
+**[View Source](https://github.com/dipanshubatra/nova-mart-ecommerce)** | **[Live Demo](https://martnova.vercel.app/)**
+
+---
+
+## 🛠️ Technical Stack
+
+**Backend:** Java 17 • Spring Boot 3 • Spring Security • Hibernate/JPA  
+**Security:** JWT • OAuth2 • RBAC • Rate Limiting  
+**Database:** PostgreSQL • MySQL • Redis  
+**DevOps:** Docker • GitHub Actions • Maven • Postman • JMeter  
+
+---
+
+## 📊 Metrics
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
 
----
-
-## 🌐 Connect with Me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/dipanshubatra)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/dipanshubatra)
+</div>
 
 ---
 
-### ✍️ Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## 🌐 Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dipanshubatra)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://dipanshu-batra.vercel.app/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/dipanshubatra)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/dipanshubatra_)
 
 ---
 
-### 🔝 Top Contributed Repositories
-![](https://github-contributor-stats.vercel.app/api?username=dipanshubatra&limit=5&theme=radical&combine_all_yearly_contributions=true)
+<div align="center">
 
----
+**Java Backend Engineer • Production-Grade Systems • Secure APIs**
 
-[![](https://visitcount.itsvg.in/api?id=dipanshubatra&icon=0&color=0)](https://visitcount.itsvg.in)
-
----
-
-*Building scalable backend systems, production-ready APIs, and software engineered for real-world impact.*
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+</div>

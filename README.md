@@ -33,10 +33,11 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 ### 🏆 Achievements
 
 - 🥇 **National-Level Hackathon Winner** — IIIT Delhi, NIT Durgapur
-- 🚀 **3× Hackathon Finalist** — including ByteVerse (Open Innovation)
+- 🥇 **Mukand Utsav 2k 26** Winner
+-  🚀 **3× Hackathon Finalist** — including ByteVerse (Open Innovation)
 - 🤖 **Oracle Certified AI Foundation Associate**
 - 👨‍🏫 **Mentored 500+ Students** in Technology & Problem Solving
-- 🎓 **Campus Ambassador** at IIT Delhi & IIT Mandi
+- 🎓 **Campus Ambassador** at IIT Delhi 
 - ⚡ Built backend platforms, security tools, and full-stack prototypes under strict deadlines
 
 ---

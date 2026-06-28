@@ -1,4 +1,4 @@
-## 🚀 Backend Engineer | Java Developer | Spring Boot Developer
+## 🚀 Backend Engineer | Java Developer | Spring Boot Developer | 1st year student
 
 I'm **Dipanshu Batra**, a **Computer Science Engineering Student**, **Backend Engineer**, and **Java Developer** focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
 

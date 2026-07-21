@@ -1,13 +1,13 @@
-## 🚀 Backend Engineer | Java Developer | Spring Boot Developer | 1st year student
+## 🚀 Backend Engineer | Java Developer | Spring Boot Developer | 2nd Year Student
 
-I'm **Dipanshu Batra**, a **Computer Science Engineering Student**, **Backend Engineer**, and **Java Developer** focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
+I'm **Dipanshu Batra**, a **Computer Science Engineering Student** at JMIT, focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
 
-I specialize in **Java**, **Spring Boot**, **System Design**, **API Development**, **Database Engineering**, and **Cloud Technologies**, with hands-on experience building secure and scalable applications using modern software engineering practices.
+I specialize in **Java**, **Spring Boot**, **System Design**, **API Development**, and **Database Engineering**, with hands-on experience building secure, multi-tenant, and distributed backend systems using modern software engineering practices.
 
-- 🔭 Building scalable backend systems and REST APIs
+- 🔭 Building **CronVault**, a distributed, multi-tenant cron job scheduler with database-level locking and RBAC
 - 🌱 Currently deepening knowledge in **System Design & Distributed Systems**
-- ☁️ Exploring **AWS, Docker & Cloud Infrastructure**
-- 🧠 Actively solving **Data Structures & Algorithms**
+- 🐳 Working with **Docker** for containerized backend deployments
+- 🧠 Actively solving **Data Structures & Algorithms** (250+ on LeetCode)
 - 🚀 Open to **Software Engineering & Backend Internships**
 
 ---
@@ -15,49 +15,48 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 ### 🎯 Primary Focus Areas
 
 - Backend Engineering
-- Java Development
-- Spring Boot Applications
+- Java & Spring Boot Development
 - REST API Development
-- Authentication & Authorization (JWT)
-- Redis Caching
-- Microservices Architecture
-- System Design & Distributed Systems
-- Cloud Computing (AWS)
+- Authentication & Authorization (JWT, OAuth2, RBAC)
+- Redis Caching & Rate Limiting
+- Distributed Systems Design
+- Database Engineering (PostgreSQL, MySQL)
 - Docker & Containerization
-- Linux Systems
 - Data Structures & Algorithms
-- Software Architecture
 
 ---
 
 ### 🏆 Achievements
 
-- 🥇 **National-Level Hackathon Winner** — IIIT Delhi, NIT Durgapur
-- 🥇 **Mukand Utsav 2k 26** Winner
--  🚀 **3× Hackathon Finalist** — including ByteVerse (Open Innovation)
-- 🤖 **Oracle Certified AI Foundation Associate**
-- 👨‍🏫 **Mentored 500+ Students** in Technology & Problem Solving
-- 🎓 **Campus Ambassador** at IIT Delhi 
-- ⚡ Built backend platforms, security tools, and full-stack prototypes under strict deadlines
+- 🥇 1st Place, Techfrontier 2025, IIIT Delhi (500+ participants)
+- 🥇 1st Place, Hackastra, NIT Durgapur
+- 🥇 1st Place, Mukand Utsav 2K26
+- 🚀 Finalist, ByteVerse Hackathon
+- 🤖 Oracle Certified AI Foundation Associate
+- 🎓 Campus Ambassador, IIT Delhi
+
+---
+
+### 🌍 Open Source Contributions
+
+- [kRamu81/MedTrack_Application](https://github.com/kRamu81/MedTrack_Application) — [94 commits](https://github.com/kRamu81/MedTrack_Application/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
+- [Nicode2707/MailGenie](https://github.com/Nicode2707/MailGenie) — [24 commits](https://github.com/Nicode2707/MailGenie/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
 
 ---
 
 ### 💡 What I Build
 
-- Scalable Backend Systems
-- Enterprise Java Applications
-- Secure Authentication & Authorization Systems
-- RESTful APIs
-- Distributed Applications
-- Cloud-Native Solutions
-- Developer Tools
-- Performance-Focused Software
+- Distributed & Multi-Tenant Backend Systems
+- Secure Authentication & Authorization Systems (JWT, OAuth2, RBAC)
+- Payment-Integrated Backend Systems (Cashfree)
+- RESTful APIs with Full API Documentation (Swagger/OpenAPI)
+- Load-Tested, Production-Ready Backends
 
 ---
 
 ### 🔍 Keywords
 
-`Java Developer` • `Backend Engineer` • `Software Engineer` • `Spring Boot Developer` • `REST API Developer` • `System Design` • `Microservices` • `Distributed Systems` • `AWS` • `Docker` • `Redis` • `MongoDB` • `SQL` • `Authentication` • `JWT` • `Backend Development` • `API Development` • `Cloud Computing` • `Linux` • `Software Architecture` • `Data Structures` • `Algorithms` • `Problem Solving` • `Competitive Programming` • `Open Source`
+`Java Developer` • `Backend Engineer` • `Spring Boot Developer` • `REST API Developer` • `System Design` • `Distributed Systems` • `Multi-Tenancy` • `Docker` • `Redis` • `PostgreSQL` • `MySQL` • `Authentication` • `JWT` • `OAuth2` • `RBAC` • `Rate Limiting` • `Backend Development` • `API Development` • `Linux` • `Data Structures` • `Algorithms` • `Open Source` • `Competitive Programming`
 
 ---
 
@@ -75,33 +74,30 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 
 ## Programming Languages
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SQL](https://img.shields.io/badge/SQL-005C84?style=for-the-badge)
 
 ## Backend & APIs
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ## Databases
-![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-005C84?style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+## DevOps & Tools
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ## Data Structures & Problem Solving
 ![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-0A0A0A?style=for-the-badge)
 
 ---
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+Spring+Boot+Developer;System+Design+%26+Distributed+Systems;Building+Production+Ready+APIs;AWS+%E2%80%A2+Docker+%E2%80%A2+Redis;Open+To+Software+Engineering+Internships)](https://leetcode.com/dipanshubatra)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+Spring+Boot+Developer;System+Design+%26+Distributed+Systems;Building+Production+Ready+APIs;Docker+%E2%80%A2+Redis+%E2%80%A2+PostgreSQL;Open+To+Software+Engineering+Internships)](https://leetcode.com/u/dipanshubatra)
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
 
@@ -110,12 +106,7 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 ## 🌐 Connect with Me:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/dipanshubatra)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/dipanshubatra)
-
----
-
-### ✍️ Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/dipanshubatra_)
 
 ---
 
@@ -128,6 +119,4 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 
 ---
 
-*Building scalable backend systems, production-ready APIs, and software engineered for real-world impact.*
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+*Building distributed, secure backend systems engineered for real-world reliability.*

@@ -110,13 +110,10 @@ I specialize in **Java**, **Spring Boot**, **System Design**, **API Development*
 
 ---
 
-### 🔝 Top Contributed Repositories
-![](https://github-contributor-stats.vercel.app/api?username=dipanshubatra&limit=5&theme=radical&combine_all_yearly_contributions=true)
+### 🔝 Top Contributed Repositories /🌍 Open Source Contributions
 
----
-
-[![](https://visitcount.itsvg.in/api?id=dipanshubatra&icon=0&color=0)](https://visitcount.itsvg.in)
-
----
+- [kRamu81/MedTrack_Application](https://github.com/kRamu81/MedTrack_Application) — [94 commits](https://github.com/kRamu81/MedTrack_Application/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
+- [Nicode2707/MailGenie](https://github.com/Nicode2707/MailGenie) — [24 commits](https://github.com/Nicode2707/MailGenie/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
+- Contributed to **5+ other open-source repositories**
 
 *Building distributed, secure backend systems engineered for real-world reliability.*

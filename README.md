@@ -66,7 +66,7 @@
 
 <img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
 
-<img src="assets/ui/wins.svg" width="100%" alt="7x national-level hackathon winner"/>
+<img src="assets/ui/wins-trophy.gif" width="100%" alt="Animated trophy cabinet: hackathon wins, finalist and ECSoC global rank"/>
 
 <br/>
 

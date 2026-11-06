@@ -1,140 +1,93 @@
+<!-- Premium profile layout: restrained typography, neutral surfaces, minimal motion. -->
+
 <div align="center">
 
-<img src="assets/ui/hero.svg" width="100%" alt="Dipanshu Batra · Backend Engineer"/>
+<img src="assets/ui/hero.svg" width="100%" alt="Dipanshu Batra — Backend Engineer"/>
 
-<br/>
-
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
-<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ui/btn-leetcode.svg" height="44" alt="LeetCode"/></a>
-<a href="https://x.com/dipanshubatra_"><img src="assets/ui/btn-x.svg" height="44" alt="X"/></a>
-<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
+[LinkedIn](https://linkedin.com/in/dipanshubatra) · [GitHub](https://github.com/dipanshubatra) · [LeetCode](https://leetcode.com/u/dipanshubatra) · [Portfolio](https://dipanshu-batra.vercel.app/)
 
 </div>
 
-<br/>
+## About
 
-<img src="assets/ui/t-about.svg" width="100%" alt="About Me"/>
+B.Tech CSE student at **JMIT Radaur** and **Backend Developer Intern at Enginow**. I build backend systems with Java and Spring Boot, with a focus on API design, authentication, concurrency, caching, payments and reliability.
 
-<img src="assets/ui/terminal.svg" width="100%" alt="whoami"/>
+<img src="assets/ui/metrics.svg" width="100%" alt="7 hackathon wins, ECSoC 2026 global rank 4, 16K plus LinkedIn followers, 16 plus open-source projects"/>
 
-<br/>
+<img src="assets/ui/terminal.svg" width="100%" alt="Backend engineering profile summary"/>
 
-<img src="assets/ui/metrics.svg" width="100%" alt="Highlights"/>
+## Selected projects
 
-<br/>
+### [NovaMart — Distributed e-commerce platform](https://github.com/dipanshubatra/nova-mart-ecommerce)
+[Live demo](https://martnova.vercel.app/)
 
-> **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
+- Eight independently deployable services covering gateway, identity, catalog, inventory, cart, order, payment and notifications.
+- Built with Java, Spring Boot, Spring Security, PostgreSQL, Redis and React.
+- Implemented reservation-based inventory, authentication flows and Cashfree payment integration.
+- Load-tested with JMeter; benchmark details below.
 
-<br/>
+### [CronVault — Multi-tenant job scheduler](https://cron-vaul-frontend-nine.vercel.app)
+- Multi-tenant scheduling with role-based access, audit history and execution controls.
+- Focus areas: reliable execution, database locking, Redis rate limiting and failure recovery.
+- Source repository is private.
 
-<img src="assets/ui/t-ecsoc.svg" width="100%" alt="ECSoC '26"/>
+## System architecture
+
+<img src="assets/ui/architecture.svg" width="100%" alt="Conceptual NovaMart architecture showing API Gateway and seven domain services"/>
+
+<sub>Conceptual service-boundary overview; it is not a live dependency or traffic-flow trace.</sub>
+
+## Performance engineering
+
+<img src="assets/ui/performance.svg" width="100%" alt="Historical JMeter comparison of Redis-cached and uncached throughput"/>
+
+<sub>Historical JMeter run: 1,000 virtual users × 50 loops. Results are a benchmark snapshot, not live telemetry.</sub>
+
+## Technical skills
+
+<img src="assets/ui/marquee.svg" width="100%" alt="Backend, data infrastructure and engineering skills"/>
+
+## Achievements
+
+<img src="assets/ui/wins.svg" width="100%" alt="Hackathon wins, finalist recognition and ECSoC global rank 4"/>
+
+**ECSoC 2026:** Global Rank 4 · Tier 1 Developer · completed progression to Master.
+
+## Experience & journey
+
+- **B.Tech CSE** — JMIT Radaur
+- **Hackathon wins** — TechFrontier (IIIT Delhi), Hackastra (NIT Durgapur), Ideathon (JMIT Radaur) and others
+- **ECSoC 2026** — Global Rank 4
+- **Backend Developer Intern** — Enginow
+
+## Open source
+
+- [MedTrack Application](https://github.com/kRamu81/MedTrack_Application)
+- [MailGenie](https://github.com/Nicode2707/MailGenie)
+- [More projects on GitHub](https://github.com/dipanshubatra)
+
+## GitHub activity
 
 <div align="center">
 
-**Elite Coders Summer of Code 2026: Global Rank 4 · Tier 1 Developer · full badge progression to Master**
+<img src="assets/stats.svg" width="100%" alt="GitHub statistics"/>
 
-<img src="assets/ecsoc/card-contributor.svg" width="150" alt="Contributor"/>
-<img src="assets/ecsoc/card-2.svg" width="150" alt="Level 2"/>
-<img src="assets/ecsoc/card-3.svg" width="150" alt="Level 3"/>
-<img src="assets/ecsoc/card-4.svg" width="150" alt="Level 4"/>
-<img src="assets/ecsoc/card-5.svg" width="150" alt="Level 5"/>
-<img src="assets/ecsoc/card-6.svg" width="150" alt="Master"/>
+<img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" width="49%" alt="LeetCode statistics"/>
 
 </div>
 
-<br/>
-
-<img src="assets/ui/t-projects.svg" width="100%" alt="Featured Projects"/>
+---
 
 <div align="center">
 
-<a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/novamart.svg" width="49%" alt="NovaMart"/></a>
-<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/cronvault.svg" width="49%" alt="CronVault"/></a>
+**Open to SDE and backend engineering opportunities.**
 
-**NovaMart:** [Source](https://github.com/dipanshubatra/nova-mart-ecommerce) · [Live demo](https://martnova.vercel.app/) &nbsp;|&nbsp; **CronVault:** [Live demo](https://cron-vaul-frontend-nine.vercel.app) (source is private)
-
-</div>
-
-<br/>
-
-<img src="assets/ui/t-architecture.svg" width="100%" alt="Microservices Architecture"/>
-
-<img src="assets/ui/architecture.svg" width="100%" alt="NovaMart microservices architecture: API Gateway, Identity, Catalog, Inventory, Cart, Order, Payment and Notification services"/>
-
-<sub>NovaMart service topology · API Gateway routes requests across seven domain services. Diagram is a conceptual overview of the service boundaries.</sub>
-
-<br/>
-
-<img src="assets/ui/t-performance.svg" width="100%" alt="Performance Engineering"/>
-
-<img src="assets/ui/performance.svg" width="100%" alt="JMeter load-test snapshot comparing Redis cache enabled and disabled throughput"/>
-
-<br/>
-
-<img src="assets/ui/t-stack.svg" width="100%" alt="Tech Stack"/>
-
-<img src="assets/ui/marquee.svg" width="100%" alt="Tech stack: Java, Spring Boot, Spring Security, PostgreSQL, MySQL, Redis, Docker, JMeter and more"/>
-
-<br/>
-
-<img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
-
-<img src="assets/ui/wins.svg" width="100%" alt="7x national-level hackathon winner"/>
-
-<br/>
-
-<img src="assets/ui/t-journey.svg" width="100%" alt="Journey"/>
-
-<img src="assets/ui/journey.svg" width="100%" alt="Journey timeline"/>
-
-<br/>
-
-<img src="assets/ui/t-oss.svg" width="100%" alt="Open Source"/>
-
-<div align="center">
-
-<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-medtrack.svg" width="32%" alt="MedTrack"/></a>
-<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-mailgenie.svg" width="32%" alt="MailGenie"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-ecsoc.svg" width="32%" alt="16+ open-source projects"/></a>
-
-</div>
-
-<br/>
-
-<img src="assets/ui/t-stats.svg" width="100%" alt="GitHub Analytics"/>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake.svg">
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
-</picture>
-
-<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
-
-<img src="assets/ext/streak-stats-demolab-com-ac0806.svg" width="49%" alt="GitHub streak"/>
-<img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" width="49%" alt="LeetCode stats"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### Open to SDE & backend internships. Let's build something reliable together.
-
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
-<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
-
-<img src="assets/footer.svg" width="100%" alt=""/>
+[LinkedIn](https://linkedin.com/in/dipanshubatra) · [GitHub](https://github.com/dipanshubatra) · [Portfolio](https://dipanshu-batra.vercel.app/)
 
 </div>
 
 <!--
-Keywords: Java Developer, Backend Engineer, Spring Boot Developer, REST API, System Design, Distributed Systems,
-Multi-Tenancy, Docker, Redis, PostgreSQL, MySQL, JWT, OAuth2, RBAC, Rate Limiting, Circuit Breakers, JMeter,
-Data Structures, Algorithms, Open Source, ECSoC 2026, Hackathon Winner, Backend Intern
+Keywords: Java Developer, Backend Engineer, Spring Boot Developer, REST API, System Design,
+Distributed Systems, Multi-Tenancy, Docker, Redis, PostgreSQL, MySQL, JWT, OAuth2, RBAC,
+Rate Limiting, Circuit Breakers, JMeter, Data Structures, Algorithms, Open Source, ECSoC 2026.
 -->

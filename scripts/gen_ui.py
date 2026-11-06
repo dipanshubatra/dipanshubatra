@@ -434,4 +434,6 @@ for k, l, c in [("linkedin", "LinkedIn", "#0a66c2"), ("github", "GitHub", "#a78b
 oss("medtrack", "94", "MedTrack_Application", "commits  ·  kRamu81/MedTrack_Application", "#22d3ee")
 oss("mailgenie", "24", "MailGenie", "commits  ·  Nicode2707/MailGenie", "#a78bfa")
 oss("ecsoc", "16+", "Open-source projects", "Java / Spring ecosystem  ·  ECSoC Global Rank 4", "#f5b942")
-print("generated", len(list(OUT.glob("*.svg"))), "svgs ->", OUT)
+import runpy
+runpy.run_path(str(Path(__file__).with_name("gen_premium.py")))
+print("generated premium profile assets ->", OUT)

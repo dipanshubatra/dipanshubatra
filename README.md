@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f0c29,50:302b63,100:1055e0&text=Dipanshu%20Batra&fontSize=56&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Backend%20Engineer%20%C2%B7%20Java%20%26%20Spring%20Boot%20%C2%B7%20Distributed%20Systems&descSize=18&descAlignY=60" width="100%" alt="header"/>
-
-<a href="https://leetcode.com/u/dipanshubatra">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&height=45&lines=Building+secure+%26+scalable+backend+systems;Java+%E2%80%A2+Spring+Boot+%E2%80%A2+Redis+%E2%80%A2+PostgreSQL;Distributed+%26+multi-tenant+architectures;ECSOC+%2726+Master+Contributor+%F0%9F%8F%85;Open+to+Backend+%2F+SDE+Internships+%F0%9F%9A%80" alt="typing"/>
-</a>
+<img src="assets/header.svg" width="100%" alt="Dipanshu Batra"/>
 
 <br/>
 
@@ -133,6 +129,12 @@
 
 <img src="https://streak-stats.demolab.com?user=dipanshubatra&theme=tokyonight&hide_border=true&border_radius=16" alt="streak"/>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake.svg">
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
+</picture>
+
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=0d1117&color=00e5ff&line=1055e0&point=ffffff&area=true&hide_border=true" width="100%" alt="activity"/>
 
 <a href="https://leetcode.com/u/dipanshubatra"><img src="https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true" alt="leetcode"/></a>
@@ -147,7 +149,7 @@
 
 <a href="https://linkedin.com/in/dipanshubatra"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:1055e0,50:302b63,100:0f0c29&section=footer" width="100%" alt="footer"/>
+<img src="assets/footer.svg" width="100%" alt=""/>
 
 </div>
 

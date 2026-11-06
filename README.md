@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="assets/ui/hero.svg" width="100%" alt="Dipanshu Batra — Backend Engineer"/>
+<img src="assets/ui/hero.svg?v=8ff8360" width="100%" alt="Dipanshu Batra — Backend Engineer"/>
 
 [LinkedIn](https://linkedin.com/in/dipanshubatra) · [GitHub](https://github.com/dipanshubatra) · [LeetCode](https://leetcode.com/u/dipanshubatra) · [Portfolio](https://dipanshu-batra.vercel.app/)
 
@@ -12,9 +12,9 @@
 
 B.Tech CSE student at **JMIT Radaur** and **Backend Developer Intern at Enginow**. I build backend systems with Java and Spring Boot, with a focus on API design, authentication, concurrency, caching, payments and reliability.
 
-<img src="assets/ui/metrics.svg" width="100%" alt="7 hackathon wins, ECSoC 2026 global rank 4, 16K plus LinkedIn followers, 16 plus open-source projects"/>
+<img src="assets/ui/metrics.svg?v=8ff8360" width="100%" alt="7 hackathon wins, ECSoC 2026 global rank 4, 16K plus LinkedIn followers, 16 plus open-source projects"/>
 
-<img src="assets/ui/terminal.svg" width="100%" alt="Backend engineering profile summary"/>
+<img src="assets/ui/terminal.svg?v=8ff8360" width="100%" alt="Backend engineering profile summary"/>
 
 ## Selected projects
 
@@ -33,23 +33,23 @@ B.Tech CSE student at **JMIT Radaur** and **Backend Developer Intern at Enginow*
 
 ## System architecture
 
-<img src="assets/ui/architecture.svg" width="100%" alt="Conceptual NovaMart architecture showing API Gateway and seven domain services"/>
+<img src="assets/ui/architecture.svg?v=8ff8360" width="100%" alt="Conceptual NovaMart architecture showing API Gateway and seven domain services"/>
 
 <sub>Conceptual service-boundary overview; it is not a live dependency or traffic-flow trace.</sub>
 
 ## Performance engineering
 
-<img src="assets/ui/performance.svg" width="100%" alt="Historical JMeter comparison of Redis-cached and uncached throughput"/>
+<img src="assets/ui/performance.svg?v=8ff8360" width="100%" alt="Historical JMeter comparison of Redis-cached and uncached throughput"/>
 
 <sub>Historical JMeter run: 1,000 virtual users × 50 loops. Results are a benchmark snapshot, not live telemetry.</sub>
 
 ## Technical skills
 
-<img src="assets/ui/marquee.svg" width="100%" alt="Backend, data infrastructure and engineering skills"/>
+<img src="assets/ui/marquee.svg?v=8ff8360" width="100%" alt="Backend, data infrastructure and engineering skills"/>
 
 ## Achievements
 
-<img src="assets/ui/wins.svg" width="100%" alt="Hackathon wins, finalist recognition and ECSoC global rank 4"/>
+<img src="assets/ui/wins.svg?v=8ff8360" width="100%" alt="Hackathon wins, finalist recognition and ECSoC global rank 4"/>
 
 **ECSoC 2026:** Global Rank 4 · Tier 1 Developer · completed progression to Master.
 

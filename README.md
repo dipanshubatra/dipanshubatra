@@ -66,7 +66,7 @@
 
 <img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
 
-<img src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/6676f18/assets/ui/wins-emoji.gif" width="100%" alt="Animated floating gold trophy achievements"/>
+<img src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/166ccb5/assets/ui/wins-emoji.gif" width="100%" alt="Animated floating gold trophy achievements"/>
 
 <br/>
 

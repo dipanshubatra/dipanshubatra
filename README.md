@@ -12,7 +12,7 @@
 
 B.Tech CSE student at **JMIT Radaur** and **Backend Developer Intern at Enginow**. I build backend systems with Java and Spring Boot, with a focus on API design, authentication, concurrency, caching, payments and reliability.
 
-<img src="assets/ui/metrics.svg?v=bb690a2" width="100%" alt="7 hackathon wins, ECSoC 2026 global rank 4, 8 NovaMart services, 16 plus open-source projects"/>
+<img src="assets/ui/metrics-premium.svg" width="100%" alt="7 hackathon wins, ECSoC 2026 global rank 4, 8 NovaMart services, 16 plus open-source projects"/>
 
 <img src="assets/ui/terminal.svg?v=bb690a2" width="100%" alt="Backend engineering profile summary"/>
 

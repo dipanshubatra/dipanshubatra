@@ -23,7 +23,7 @@ body=f'''<rect width="1000" height="190" rx="14" fill="{PANEL}" stroke="{LINE}"/
 <text class="mono" x="28" y="172" font-size="13" fill="{TEAL}">$ status</text><text class="mono" x="150" y="172" font-size="13" fill="{TEXT}">Backend Developer Intern @ Enginow · open to SDE opportunities</text>'''
 svg('terminal.svg',1000,190,body)
 # Metric strip
-items=[('7×','Hackathon wins'),('#4','ECSoC 2026 · global rank'),('16K+','LinkedIn community'),('16+','Open-source projects')]
+items=[('7×','Hackathon wins'),('#4','ECSoC 2026 · global rank'),('8','NovaMart services'),('16+','Open-source projects')]
 body=f'<rect width="1000" height="142" rx="14" fill="{BG}" stroke="{LINE}"/>'
 for i,(n,l) in enumerate(items):
  x=18+i*250

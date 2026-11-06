@@ -110,7 +110,7 @@ def terminal():
               ("$ cat now.txt", "p", 4.4, .9),
               ("Backend Developer Intern @ Enginow  ·  building CronVault, a multi-tenant job scheduler", "o", 5.5, 2.2),
               ("$ ls ./achievements", "p", 8.4, 1.1),
-              ("ecsoc-global-rank-4/   7x-hackathon-winner/   16k-linkedin/   250+-leetcode/", "o", 9.7, 2.1),
+              ("ecsoc-global-rank-4/   7x-hackathon-winner/   16k-linkedin/   16+-open-source-projects/", "o", 9.7, 2.1),
               ("$ echo $STATUS", "p", 12.6, 1.0),
               ("open to SDE & backend internships", "o", 13.8, 1.6)]
     css = ("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}"
@@ -146,7 +146,7 @@ def terminal():
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
     items = [("7x", "Hackathon Wins", "national-level winner", "#22d3ee"), ("#4", "ECSoC '26 Global Rank", "Tier 1 Developer", GOLD),
-             ("16K+", "LinkedIn Followers", "building in public", "#a78bfa"), ("250+", "LeetCode Solved", "DSA every day", "#f472b6")]
+             ("16K+", "LinkedIn Followers", "building in public", "#a78bfa"), ("16+", "Open-source Projects", "Java / Spring ecosystem", "#f472b6")]
     W, H, cw, gap = 1000, 150, 232, 24
     defs = ('<clipPath id="r"><rect width="232" height="138" rx="18"/></clipPath>'
             '<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>')

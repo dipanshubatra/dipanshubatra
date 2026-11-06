@@ -24,7 +24,7 @@
 
 <br/>
 
-> 2nd-year **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
+> **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
 
 <br/>
 

@@ -20,7 +20,7 @@
 
 <br/>
 
-<img src="assets/ui/metrics-final.svg" width="100%" alt="Selected highlights"/>
+<img src="assets/ui/metrics-countup.gif" width="100%" alt="Animated achievement counters"/>
 
 <br/>
 

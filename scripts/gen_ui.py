@@ -145,46 +145,37 @@ def terminal():
 
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
-    # Compact About Me counters: rolling digits, open typography, no cards.
+    # Simple About Me counters: each value ticks up in place, no cards or clipping.
     items = [
-        ("", "7", "x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
-        ("#", "4", "", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
-        ("", "16", "K+", "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
-        ("", "16", "+", "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6"),
+        ("", "x", 7, "HACKATHON WINS", "national-level winner", "#22d3ee"),
+        ("#", "", 4, "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
+        ("", "K+", 16, "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
+        ("", "+", 16, "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6"),
     ]
-    W, H, digit_h = 1000, 116, 38
-    defs = ""
+    W, H = 1000, 116
     css = ("@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}"
-           "@media(prefers-reduced-motion:reduce){*{animation:none!important;transform:none!important}}")
+           "@keyframes tick{0%,100%{opacity:0}12%,88%{opacity:1}}"
+           "@keyframes settle{from{opacity:0}to{opacity:1}}"
+           "@media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}")
     body = '<path d="M0 108H1000" stroke="#263244" stroke-width="1"/>'
-    for i, (prefix, digits, suffix, lab, sub, c) in enumerate(items):
+    for i, (prefix, suffix, target, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g transform="translate({x} 0)"><g style="animation:rise .65s {i*.12:.2f}s cubic-bezier(.2,.7,.2,1) both">'
+        body += f'<g transform="translate({x} 0)"><g style="animation:rise .55s {i*.1:.2f}s cubic-bezier(.2,.7,.2,1) both">'
         if i:
             body += '<path d="M0 12V96" stroke="#263244" stroke-width="1"/>'
-        cursor = 22
-        if prefix:
-            body += f'<text x="{cursor}" y="44" font-size="32" font-weight="750" fill="{c}">{E(prefix)}</text>'
-            cursor += 23
-        for j, digit in enumerate(digits):
-            target = int(digit)
-            cls = f"roll{i}{j}"
-            if target:
-                css += (f"@keyframes {cls}{{from{{transform:translateY(0)}}to{{transform:translateY(-{target*digit_h}px)}}}}"
-                        f".{cls}{{animation:{cls} 1.65s {i*.12+j*.08:.2f}s steps({target},end) forwards}}")
-            else:
-                css += f".{cls}{{transform:translateY(0)}}"
-            body += f'<svg x="{cursor+j*25}" y="10" width="25" height="38" viewBox="0 0 25 38" overflow="hidden"><g class="{cls}" transform="translate(0 0)">'
-            for value in range(10):
-                body += f'<text x="0" y="{28+value*digit_h}" font-size="34" font-weight="780" letter-spacing="-1.5" fill="{c}">{value}</text>'
-            body += '</g></svg>'
-        cursor += len(digits)*25 + 2
-        if suffix:
-            body += f'<text x="{cursor}" y="44" font-size="25" font-weight="700" fill="{c}">{E(suffix)}</text>'
-        body += (f'<text x="22" y="69" font-size="10" font-weight="700" letter-spacing="1.0" fill="{WHITE}">{E(lab)}</text>'
-                 f'<text x="22" y="87" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
+        # Briefly reveal every intermediate value at the same baseline, then settle on the final count.
+        for value in range(target):
+            delay = i*.1 + value*.105
+            cls = f"tick{i}_{value}"
+            body += (f'<text x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}" '
+                     f'style="opacity:0;animation:tick .105s {delay:.3f}s both">{E(prefix)}{value}{E(suffix)}</text>')
+        final_delay = i*.1 + target*.105
+        body += (f'<text x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}" '
+                 f'style="opacity:0;animation:settle .18s {final_delay:.3f}s forwards">{E(prefix)}{target}{E(suffix)}</text>')
+        body += (f'<text x="22" y="72" font-size="10" font-weight="700" letter-spacing="1.0" fill="{WHITE}">{E(lab)}</text>'
+                 f'<text x="22" y="90" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
         body += '</g></g>'
-    wr("metrics-countup.svg", W, H, defs, css, body)
+    wr("metrics-countup.svg", W, H, "", css, body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

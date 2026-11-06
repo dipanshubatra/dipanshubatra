@@ -4,10 +4,10 @@
 
 <br/>
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://leetcode.com/u/dipanshubatra"><img src="https://img.shields.io/badge/LeetCode-250%2B_Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
-<a href="https://x.com/dipanshubatra_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
-<img src="https://komarev.com/ghpvc/?username=dipanshubatra&style=for-the-badge&color=1055e0&label=PROFILE+VIEWS"/>
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ext/img-shields-io-badge-LinkedIn-0A66C2-41c21d.svg"/></a>
+<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ext/img-shields-io-badge-LeetCode-250-2B-Sol-cf51af.svg"/></a>
+<a href="https://x.com/dipanshubatra_"><img src="assets/ext/img-shields-io-badge-X-000000-f563b2.svg"/></a>
+
 
 </div>
 
@@ -79,18 +79,18 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=java,spring,hibernate,python,postgres,mysql,redis,supabase&perline=8" alt="backend"/>
+<img src="assets/ext/skillicons-dev-icons-8c2a25.svg" alt="backend"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,idea,postman,react,vite&perline=9" alt="tools"/>
+<img src="assets/ext/skillicons-dev-icons-e070ad.svg" alt="tools"/>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-<img src="https://img.shields.io/badge/OAuth2-EB5424?style=flat-square&logo=auth0&logoColor=white"/>
-<img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black"/>
-<img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
-<img src="https://img.shields.io/badge/JMeter-D22128?style=flat-square&logo=apachejmeter&logoColor=white"/>
-<img src="https://img.shields.io/badge/Cashfree-Payments-6C47FF?style=flat-square"/>
+<img src="assets/ext/img-shields-io-badge-JWT-000000-dc6a5b.svg"/>
+<img src="assets/ext/img-shields-io-badge-OAuth2-EB5424-393ef1.svg"/>
+<img src="assets/ext/img-shields-io-badge-Swagger-85EA2D-547428.svg"/>
+<img src="assets/ext/img-shields-io-badge-Spring-20Security-6-ce67ac.svg"/>
+<img src="assets/ext/img-shields-io-badge-JMeter-D22128-553069.svg"/>
+<img src="assets/ext/img-shields-io-badge-Cashfree-Payments-6-870b61.svg"/>
 
 </div>
 
@@ -112,9 +112,9 @@
 
 <div align="center">
 
-<a href="https://github.com/kRamu81/MedTrack_Application"><img src="https://img.shields.io/badge/MedTrack_Application-94_commits-1055e0?style=for-the-badge&logo=github"/></a>
-<a href="https://github.com/Nicode2707/MailGenie"><img src="https://img.shields.io/badge/MailGenie-24_commits-8957e5?style=for-the-badge&logo=github"/></a>
-<img src="https://img.shields.io/badge/+5_other_repos-contributed-2ea043?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
+<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ext/img-shields-io-badge-MedTrack-Applicatio-cd6cbc.svg"/></a>
+<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ext/img-shields-io-badge-MailGenie-24-commit-1b1782.svg"/></a>
+<img src="assets/ext/img-shields-io-badge-5-other-repos-contr-893a60.svg"/>
 
 </div>
 
@@ -127,7 +127,7 @@
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=16" alt="stats"/>
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=tokyonight&hide_border=true&border_radius=16" alt="langs"/>
 
-<img src="https://streak-stats.demolab.com?user=dipanshubatra&theme=tokyonight&hide_border=true&border_radius=16" alt="streak"/>
+<img src="assets/ext/streak-stats-demolab-com-ac0806.svg" alt="streak"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg">
@@ -137,7 +137,7 @@
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=0d1117&color=00e5ff&line=1055e0&point=ffffff&area=true&hide_border=true" width="100%" alt="activity"/>
 
-<a href="https://leetcode.com/u/dipanshubatra"><img src="https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true" alt="leetcode"/></a>
+<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" alt="leetcode"/></a>
 
 </div>
 
@@ -147,7 +147,7 @@
 
 ### 🤝 Let's build something reliable together
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ext/img-shields-io-badge-Connect-on-LinkedIn-db3c42.svg"/></a>
 
 <img src="assets/footer.svg" width="100%" alt=""/>
 

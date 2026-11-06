@@ -167,11 +167,14 @@ def metrics():
         for value in range(target):
             delay = i*.1 + value*.105
             cls = f"tick{i}_{value}"
-            body += (f'<text x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}" '
-                     f'style="opacity:0;animation:tick .105s {delay:.3f}s both">{E(prefix)}{value}{E(suffix)}</text>')
+            css += f".{cls}{{opacity:0;animation:tick .105s {delay:.3f}s both}}"
+            body += (f'<text class="{cls}" x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}">'
+                     f'{E(prefix)}{value}{E(suffix)}</text>')
         final_delay = i*.1 + target*.105
-        body += (f'<text x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}" '
-                 f'style="opacity:0;animation:settle .18s {final_delay:.3f}s forwards">{E(prefix)}{target}{E(suffix)}</text>')
+        final_cls = f"final{i}"
+        css += f".{final_cls}{{opacity:0;animation:settle .18s {final_delay:.3f}s forwards}}"
+        body += (f'<text class="{final_cls}" x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}">'
+                 f'{E(prefix)}{target}{E(suffix)}</text>')
         body += (f'<text x="22" y="72" font-size="10" font-weight="700" letter-spacing="1.0" fill="{WHITE}">{E(lab)}</text>'
                  f'<text x="22" y="90" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
         body += '</g></g>'

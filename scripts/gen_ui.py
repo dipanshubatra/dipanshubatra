@@ -166,7 +166,7 @@ def metrics():
     body = '<path d="M0 122H1000" stroke="#263244" stroke-width="1"/>'
     for i, (num, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g class="n{i}" transform="translate({x} 0)">'
+        body += f'<g transform="translate({x} 0)"><g class="n{i}">'
         if i:
             body += '<path d="M0 18V108" stroke="#263244" stroke-width="1"/>'
         body += (f'<text x="22" y="65" font-size="43" font-weight="750" letter-spacing="-1.5" fill="{c}">{E(num)}</text>'
@@ -181,8 +181,8 @@ def metrics():
         else:
             for j in range(5):
                 body += f'<circle class="p" cx="{22+j*12}" cy="76" r="2" fill="{c}" style="animation-delay:{j*.13:.2f}s"/>'
-        body += '</g>'
-    wr("metrics-rail.svg", W, H, defs, css, body)
+        body += '</g></g>'
+    wr("metrics-rail-v2.svg", W, H, defs, css, body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

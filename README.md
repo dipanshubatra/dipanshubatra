@@ -20,7 +20,7 @@
 
 <br/>
 
-<img src="assets/ui/metrics-premium.svg?v=40a397c" width="100%" alt="Selected highlights"/>
+<img src="assets/ui/metrics-final.svg" width="100%" alt="Selected highlights"/>
 
 <br/>
 

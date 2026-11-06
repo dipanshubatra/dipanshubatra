@@ -1,52 +1,38 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Dipanshu Batra"/>
+<img src="assets/ui/hero.svg" width="100%" alt="Dipanshu Batra · Backend Engineer"/>
 
 <br/>
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ext/img-shields-io-badge-LinkedIn-0A66C2-41c21d.svg"/></a>
-<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ext/img-shields-io-badge-LeetCode-250-2B-Sol-cf51af.svg"/></a>
-<a href="https://x.com/dipanshubatra_"><img src="assets/ext/img-shields-io-badge-X-000000-f563b2.svg"/></a>
-
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
+<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ui/btn-leetcode.svg" height="44" alt="LeetCode"/></a>
+<a href="https://x.com/dipanshubatra_"><img src="assets/ui/btn-x.svg" height="44" alt="X"/></a>
+<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
 
 </div>
 
 <br/>
 
-## ⚡ About Me
+<img src="assets/ui/t-about.svg" width="100%" alt="About Me"/>
 
-> Final-year **Computer Science Engineering** student at **JMIT Radaur** who builds **scalable backend systems**, **secure REST APIs** and **production-ready software**. I like problems where correctness under load actually matters: locking, caching, auth, and payments.
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔭 Currently
-- Building **CronVault**: distributed, multi-tenant cron scheduler with DB-level locking & RBAC
-- Deepening **System Design & Distributed Systems**
-- Shipping containerized backends with **Docker**
-
-</td>
-<td width="50%" valign="top">
-
-### 🎯 Focus
-- Backend Engineering · REST APIs
-- AuthN/AuthZ: JWT, OAuth2, RBAC
-- Redis caching & rate limiting
-- **250+** LeetCode problems solved
-- 🚀 **Open to SDE & Backend internships**
-
-</td>
-</tr>
-</table>
+<img src="assets/ui/terminal.svg" width="100%" alt="whoami"/>
 
 <br/>
 
-## 🏅 ECSOC '26 · Elite Coders Summer of Code
+<img src="assets/ui/metrics.svg" width="100%" alt="Highlights"/>
+
+<br/>
+
+> 2nd-year **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
+
+<br/>
+
+<img src="assets/ui/t-ecsoc.svg" width="100%" alt="ECSoC '26"/>
 
 <div align="center">
 
-**Completed the full progression, all the way to the Master tier.**
+**Elite Coders Summer of Code 2026: Global Rank 4 · Tier 1 Developer · full badge progression to Master**
 
 <img src="assets/ecsoc/card-contributor.svg" width="150" alt="Contributor"/>
 <img src="assets/ecsoc/card-2.svg" width="150" alt="Level 2"/>
@@ -59,74 +45,52 @@
 
 <br/>
 
-## 🏆 Achievements
+<img src="assets/ui/t-projects.svg" width="100%" alt="Featured Projects"/>
 
 <div align="center">
 
-| 🥇 1st Place | 🥇 1st Place | 🥇 1st Place | 🥇 1st Place |
-|:---:|:---:|:---:|:---:|
-| **TechFrontier 2025**<br/>IIIT Delhi · 500+ teams | **Hackastra**<br/>NIT Durgapur | **Ideathon 2026**<br/>JMIT Radaur | **Mukand Utsav 2K26** |
+<a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/novamart.svg" width="49%" alt="NovaMart"/></a>
+<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/cronvault.svg" width="49%" alt="CronVault"/></a>
 
-| 🚀 Finalist | 🛡️ Master Tier | 🤖 Certified | 🎓 Ambassador |
-|:---:|:---:|:---:|:---:|
-| **ByteVerse Hackathon** | **ECSOC '26**<br/>Contributor | **Oracle** AI Foundations Associate | **Campus Ambassador**<br/>IIT Delhi |
+**NovaMart:** [Source](https://github.com/dipanshubatra/nova-mart-ecommerce) · [Live demo](https://martnova.vercel.app/) &nbsp;|&nbsp; **CronVault:** [Live demo](https://cron-vaul-frontend-nine.vercel.app) (source is private)
 
 </div>
 
 <br/>
 
-## 🛠️ Tech Stack
+<img src="assets/ui/t-stack.svg" width="100%" alt="Tech Stack"/>
+
+<img src="assets/ui/marquee.svg" width="100%" alt="Tech stack: Java, Spring Boot, Spring Security, PostgreSQL, MySQL, Redis, Docker, JMeter and more"/>
+
+<br/>
+
+<img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
+
+<img src="assets/ui/wins.svg" width="100%" alt="7x national-level hackathon winner"/>
+
+<br/>
+
+<img src="assets/ui/t-journey.svg" width="100%" alt="Journey"/>
+
+<img src="assets/ui/journey.svg" width="100%" alt="Journey timeline"/>
+
+<br/>
+
+<img src="assets/ui/t-oss.svg" width="100%" alt="Open Source"/>
 
 <div align="center">
 
-<img src="assets/ext/skillicons-dev-icons-8c2a25.svg" alt="backend"/>
-<br/>
-<img src="assets/ext/skillicons-dev-icons-e070ad.svg" alt="tools"/>
-
-<br/><br/>
-
-<img src="assets/ext/img-shields-io-badge-JWT-000000-dc6a5b.svg"/>
-<img src="assets/ext/img-shields-io-badge-OAuth2-EB5424-393ef1.svg"/>
-<img src="assets/ext/img-shields-io-badge-Swagger-85EA2D-547428.svg"/>
-<img src="assets/ext/img-shields-io-badge-Spring-20Security-6-ce67ac.svg"/>
-<img src="assets/ext/img-shields-io-badge-JMeter-D22128-553069.svg"/>
-<img src="assets/ext/img-shields-io-badge-Cashfree-Payments-6-870b61.svg"/>
+<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-medtrack.svg" width="32%" alt="MedTrack"/></a>
+<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-mailgenie.svg" width="32%" alt="MailGenie"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-ecsoc.svg" width="32%" alt="16+ open-source projects"/></a>
 
 </div>
 
 <br/>
 
-## 💡 What I Build
-
-| | |
-|---|---|
-| 🧩 **Distributed systems** | Multi-tenant services with database-level locking |
-| 🔐 **Secure auth** | JWT, OAuth2 and RBAC done properly |
-| 💳 **Payments** | Cashfree-integrated backends |
-| 📄 **Documented APIs** | Full Swagger / OpenAPI coverage |
-| ⚙️ **Production-ready** | Redis caching, rate limiting, JMeter load tests |
-
-<br/>
-
-## 🌍 Open Source
+<img src="assets/ui/t-stats.svg" width="100%" alt="GitHub Analytics"/>
 
 <div align="center">
-
-<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ext/img-shields-io-badge-MedTrack-Applicatio-cd6cbc.svg"/></a>
-<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ext/img-shields-io-badge-MailGenie-24-commit-1b1782.svg"/></a>
-<img src="assets/ext/img-shields-io-badge-5-other-repos-contr-893a60.svg"/>
-
-</div>
-
-<br/>
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
-
-<img src="assets/ext/streak-stats-demolab-com-ac0806.svg" alt="streak"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg">
@@ -134,7 +98,10 @@
   <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
 
-<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" alt="leetcode"/></a>
+<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
+
+<img src="assets/ext/streak-stats-demolab-com-ac0806.svg" width="49%" alt="GitHub streak"/>
+<img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" width="49%" alt="LeetCode stats"/>
 
 </div>
 
@@ -142,16 +109,18 @@
 
 <div align="center">
 
-### 🤝 Let's build something reliable together
+### Open to SDE & backend internships. Let's build something reliable together.
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ext/img-shields-io-badge-Connect-on-LinkedIn-db3c42.svg"/></a>
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
+<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
 
 <img src="assets/footer.svg" width="100%" alt=""/>
 
 </div>
 
 <!--
-Keywords: Java Developer, Backend Engineer, Spring Boot Developer, REST API, System Design,
-Distributed Systems, Multi-Tenancy, Docker, Redis, PostgreSQL, MySQL, JWT, OAuth2, RBAC,
-Rate Limiting, Linux, Data Structures, Algorithms, Open Source, ECSOC 2026
+Keywords: Java Developer, Backend Engineer, Spring Boot Developer, REST API, System Design, Distributed Systems,
+Multi-Tenancy, Docker, Redis, PostgreSQL, MySQL, JWT, OAuth2, RBAC, Rate Limiting, Circuit Breakers, JMeter,
+Data Structures, Algorithms, Open Source, ECSoC 2026, Hackathon Winner, Backend Intern
 -->

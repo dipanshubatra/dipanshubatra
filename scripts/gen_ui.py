@@ -145,40 +145,33 @@ def terminal():
 
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
-    # Simple About Me counters: each value ticks up in place, no cards or clipping.
+    # Premium editorial metrics: always-visible values, open layout, no cards.
     items = [
-        ("", "x", 7, "HACKATHON WINS", "national-level winner", "#22d3ee"),
-        ("#", "", 4, "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
-        ("", "K+", 16, "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
-        ("", "+", 16, "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6"),
+        ("7x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
+        ("#4", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
+        ("16K+", "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
+        ("16+", "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6"),
     ]
-    W, H = 1000, 116
-    css = ("@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}"
-           "@keyframes tick{0%,100%{opacity:0}12%,88%{opacity:1}}"
-           "@keyframes settle{from{opacity:0}to{opacity:1}}"
-           "@media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}")
-    body = '<path d="M0 108H1000" stroke="#263244" stroke-width="1"/>'
-    for i, (prefix, suffix, target, lab, sub, c) in enumerate(items):
+    W, H = 1000, 126
+    defs = ('<linearGradient id="rail" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".34" stop-color="#f5b942"/>'
+            '<stop offset=".68" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>')
+    css = ("@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}"
+           ".metric{animation:enter .7s cubic-bezier(.2,.7,.2,1) both}"
+           "@media(prefers-reduced-motion:reduce){.metric{animation:none!important}}")
+    body = ('<text x="18" y="15" font-size="9" letter-spacing="2" font-weight="600" fill="#64748b">SELECTED HIGHLIGHTS</text>'
+            '<path d="M18 25H982" stroke="#263244" stroke-width="1"/>'
+            '<rect x="18" y="25" width="964" height="1.5" fill="url(#rail)" opacity=".85"/>')
+    for i, (num, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g transform="translate({x} 0)"><g style="animation:rise .55s {i*.1:.2f}s cubic-bezier(.2,.7,.2,1) both">'
+        body += f'<g class="metric" style="animation-delay:{i*.09:.2f}s" transform="translate({x} 0)">'
         if i:
-            body += '<path d="M0 12V96" stroke="#263244" stroke-width="1"/>'
-        # Briefly reveal every intermediate value at the same baseline, then settle on the final count.
-        for value in range(target):
-            delay = i*.1 + value*.105
-            cls = f"tick{i}_{value}"
-            css += f".{cls}{{opacity:0;animation:tick .105s {delay:.3f}s both}}"
-            body += (f'<text class="{cls}" x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}">'
-                     f'{E(prefix)}{value}{E(suffix)}</text>')
-        final_delay = i*.1 + target*.105
-        final_cls = f"final{i}"
-        css += f".{final_cls}{{opacity:0;animation:settle .18s {final_delay:.3f}s forwards}}"
-        body += (f'<text class="{final_cls}" x="22" y="48" font-size="36" font-weight="780" letter-spacing="-1.4" fill="{c}">'
-                 f'{E(prefix)}{target}{E(suffix)}</text>')
-        body += (f'<text x="22" y="72" font-size="10" font-weight="700" letter-spacing="1.0" fill="{WHITE}">{E(lab)}</text>'
-                 f'<text x="22" y="90" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
-        body += '</g></g>'
-    wr("metrics-countup.svg", W, H, "", css, body)
+            body += '<path d="M0 43V112" stroke="#263244" stroke-width="1"/>'
+        body += (f'<text x="22" y="77" font-size="43" font-weight="760" letter-spacing="-2" fill="{c}">{E(num)}</text>'
+                 f'<circle cx="24" cy="94" r="2" fill="{c}"/>'
+                 f'<text x="32" y="97" font-size="9.5" font-weight="700" letter-spacing=".8" fill="{WHITE}">{E(lab)}</text>'
+                 f'<text x="22" y="114" font-size="10" fill="{MUTED}">{E(sub)}</text>'
+                 '</g>')
+    wr("metrics-premium.svg", W, H, defs, css, body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

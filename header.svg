@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f0c29"/><stop offset=".5" stop-color="#302b63"/><stop offset="1" stop-color="#1055e0"/>
+    </linearGradient>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#8957e5"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Fira Code','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace;font-weight:600}
+    .name{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:2px}
+    .sub{font-family:'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1px}
+    @keyframes wv{from{transform:translateX(0)}to{transform:translateX(-500px)}}
+    @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .in{animation:fade 1.2s ease-out both} .in2{animation:fade 1.2s ease-out .35s both}
+    @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+    .s1{animation:tw 2.4s infinite} .s2{animation:tw 3.1s .8s infinite} .s3{animation:tw 2.7s 1.5s infinite}
+    .w0{animation:wv 7s linear infinite}.w1{animation:wv 10s linear infinite}.w2{animation:wv 14s linear infinite}
+    @keyframes t0{0%,0.00%{width:0}7.00%,18.40%{width:527px}18.41%,100%{width:0}}.c0{animation:t0 18.0s linear infinite}@keyframes t1{0%,20.00%{width:0}27.00%,38.40%{width:490px}38.41%,100%{width:0}}.c1{animation:t1 18.0s linear infinite}@keyframes t2{0%,40.00%{width:0}47.00%,58.40%{width:502px}58.41%,100%{width:0}}.c2{animation:t2 18.0s linear infinite}@keyframes t3{0%,60.00%{width:0}67.00%,78.40%{width:353px}78.41%,100%{width:0}}.c3{animation:t3 18.0s linear infinite}@keyframes t4{0%,80.00%{width:0}87.00%,98.40%{width:415px}98.41%,100%{width:0}}.c4{animation:t4 18.0s linear infinite}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="300" fill="url(#bg)"/>
+    <circle class="s1" cx="90" cy="50" r="2" fill="#fff"/><circle class="s2" cx="880" cy="40" r="1.6" fill="#fff"/>
+    <circle class="s3" cx="720" cy="120" r="1.4" fill="#fff"/><circle class="s1" cx="210" cy="150" r="1.4" fill="#fff"/>
+    <circle class="s2" cx="940" cy="150" r="2" fill="#fff"/><circle class="s3" cx="450" cy="30" r="1.5" fill="#fff"/>
+    <g transform="translate(0 215)"><g class="w w0" opacity="0.18"><path d="M0 40 Q125 0 250 40 T500 40 T750 40 T1000 40 T1250 40 T1500 40 T1750 40 T2000 40 T2250 40 T2500 40 V200 H0 Z" fill="url(#wg)"/></g></g>
+  <g transform="translate(-120 227)"><g class="w w1" opacity="0.28"><path d="M0 40 Q125 0 250 40 T500 40 T750 40 T1000 40 T1250 40 T1500 40 T1750 40 T2000 40 T2250 40 T2500 40 V200 H0 Z" fill="url(#wg)"/></g></g>
+  <g transform="translate(-260 239)"><g class="w w2" opacity="0.45"><path d="M0 40 Q125 0 250 40 T500 40 T750 40 T1000 40 T1250 40 T1500 40 T1750 40 T2000 40 T2250 40 T2500 40 V200 H0 Z" fill="url(#wg)"/></g></g>
+    <text class="name in" x="500" y="88" text-anchor="middle" font-size="58" fill="#ffffff">Dipanshu Batra</text>
+    <text class="sub in2" x="500" y="130" text-anchor="middle" font-size="19" fill="#c9d1ff">Backend Engineer  ·  Java &amp; Spring Boot  ·  Distributed Systems</text>
+    <clipPath id="cp0"><rect class="c0" x="239.6" y="170" width="0" height="40"/></clipPath><text x="239.6" y="198" font-size="21" fill="#00e5ff" clip-path="url(#cp0)" class="mono">Building secure &amp; scalable backend systems</text><clipPath id="cp1"><rect class="c1" x="258.2" y="170" width="0" height="40"/></clipPath><text x="258.2" y="198" font-size="21" fill="#00e5ff" clip-path="url(#cp1)" class="mono">Java • Spring Boot • Redis • PostgreSQL</text><clipPath id="cp2"><rect class="c2" x="252.0" y="170" width="0" height="40"/></clipPath><text x="252.0" y="198" font-size="21" fill="#00e5ff" clip-path="url(#cp2)" class="mono">Distributed &amp; multi-tenant architectures</text><clipPath id="cp3"><rect class="c3" x="326.4" y="170" width="0" height="40"/></clipPath><text x="326.4" y="198" font-size="21" fill="#00e5ff" clip-path="url(#cp3)" class="mono">ECSOC &#x27;26 Master Contributor</text><clipPath id="cp4"><rect class="c4" x="295.4" y="170" width="0" height="40"/></clipPath><text x="295.4" y="198" font-size="21" fill="#00e5ff" clip-path="url(#cp4)" class="mono">Open to Backend / SDE Internships</text>
+  </g>
+</svg>

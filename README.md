@@ -20,7 +20,7 @@
 
 <br/>
 
-<img src="assets/ui/metrics.svg" width="100%" alt="Highlights"/>
+<img src="assets/ui/metrics.svg?v=73ac502" width="100%" alt="Highlights"/>
 
 <br/>
 

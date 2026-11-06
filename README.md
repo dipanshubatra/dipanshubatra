@@ -124,8 +124,7 @@
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=16" alt="stats"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=tokyonight&hide_border=true&border_radius=16" alt="langs"/>
+<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
 
 <img src="assets/ext/streak-stats-demolab-com-ac0806.svg" alt="streak"/>
 
@@ -134,8 +133,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake.svg">
   <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=0d1117&color=00e5ff&line=1055e0&point=ffffff&area=true&hide_border=true" width="100%" alt="activity"/>
 
 <a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" alt="leetcode"/></a>
 

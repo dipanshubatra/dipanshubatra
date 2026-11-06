@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="250" viewBox="0 0 830 250">
+  <style>
+    text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+    .t{font-size:19px;font-weight:700;fill:#70a5fd}
+    .k{font-size:14px;fill:#a9b1d6} .v{font-size:14px;font-weight:700;fill:#38bdae}
+    .bar{transform-box:fill-box;transform-origin:left;animation:g 1.2s ease-out both}
+    @keyframes g{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  </style>
+  <rect x=".5" y=".5" width="829" height="249" rx="16" fill="#1a1b27" stroke="#2a2e45"/>
+  <text x="30" y="46" class="t">GitHub Stats</text>
+  <text x="470" y="46" class="t">Top Languages <tspan class="k" font-size="12">(by repository)</tspan></text>
+  <line x1="415" y1="30" x2="415" y2="220" stroke="#2a2e45"/>
+  <text x="30" y="88" class="k">Public repos</text><text x="300" y="88" class="v" text-anchor="end">39</text><text x="30" y="116" class="k">Total stars</text><text x="300" y="116" class="v" text-anchor="end">5</text><text x="30" y="144" class="k">Commits (all time)</text><text x="300" y="144" class="v" text-anchor="end">3783</text><text x="30" y="172" class="k">Pull requests</text><text x="300" y="172" class="v" text-anchor="end">754</text><text x="30" y="200" class="k">Followers</text><text x="300" y="200" class="v" text-anchor="end">9</text>
+  <text x="470" y="76" class="k">Java</text><text x="800" y="76" class="v" text-anchor="end">33%</text><rect x="470" y="84" width="330" height="8" rx="4" fill="#2a2e45"/><rect class="bar" style="animation-delay:0.0s" x="470" y="84" width="110" height="8" rx="4" fill="#70a5fd"/><text x="470" y="108" class="k">Python</text><text x="800" y="108" class="v" text-anchor="end">33%</text><rect x="470" y="116" width="330" height="8" rx="4" fill="#2a2e45"/><rect class="bar" style="animation-delay:0.15s" x="470" y="116" width="110" height="8" rx="4" fill="#bb9af7"/><text x="470" y="140" class="k">CSS</text><text x="800" y="140" class="v" text-anchor="end">11%</text><rect x="470" y="148" width="330" height="8" rx="4" fill="#2a2e45"/><rect class="bar" style="animation-delay:0.3s" x="470" y="148" width="37" height="8" rx="4" fill="#38bdae"/><text x="470" y="172" class="k">HTML</text><text x="800" y="172" class="v" text-anchor="end">11%</text><rect x="470" y="180" width="330" height="8" rx="4" fill="#2a2e45"/><rect class="bar" style="animation-delay:0.44999999999999996s" x="470" y="180" width="37" height="8" rx="4" fill="#f7768e"/><text x="470" y="204" class="k">JavaScript</text><text x="800" y="204" class="v" text-anchor="end">11%</text><rect x="470" y="212" width="330" height="8" rx="4" fill="#2a2e45"/><rect class="bar" style="animation-delay:0.6s" x="470" y="212" width="37" height="8" rx="4" fill="#e0af68"/>
+</svg>

@@ -3,20 +3,20 @@ from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 import math
 
-W,H=1000,365
+W,H=1000,420
 BG=(13,17,23)
-WHITE=(238,243,249)
-MUTED=(137,151,169)
+WHITE=(242,246,252)
+MUTED=(164,177,194)
 GOLD=(255,193,55)
 CYAN=(34,211,238)
-SILVER=(203,213,225)
+SILVER=(215,222,232)
 fd=Path("/usr/share/fonts/truetype/dejavu")
 emoji_path="/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 emoji=ImageFont.truetype(emoji_path,109)
-title_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),13)
-sub_font=ImageFont.truetype(str(fd/"DejaVuSans.ttf"),10)
-tag_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),8)
-head_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),9)
+title_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),16)
+sub_font=ImageFont.truetype(str(fd/"DejaVuSans.ttf"),12)
+tag_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),9)
+head_font=ImageFont.truetype(str(fd/"DejaVuSans-Bold.ttf"),10)
 items=[
  ("🏆","Techfrontier 2025","IIIT Delhi · Winner","WINNER",GOLD),
  ("🏆","Hackastra","NIT Durgapur · Winner","WINNER",GOLD),
@@ -31,41 +31,45 @@ items=[
 def render(frame):
     im=Image.new("RGB",(W,H),BG)
     d=ImageDraw.Draw(im)
-    d.text((20,10),"ACHIEVEMENTS",font=head_font,fill=(112,129,149))
-    d.text((W-143,10),"08  /  MILESTONES",font=head_font,fill=(112,129,149))
-    # Thin editorial rule, not a card/container.
-    d.line((20,29,980,29),fill=(39,50,65),width=1)
+    d.text((20,10),"ACHIEVEMENTS",font=head_font,fill=(139,155,176))
+    d.text((W-143,10),"08  /  MILESTONES",font=head_font,fill=(139,155,176))
+    d.line((20,31,980,31),fill=(43,55,72),width=1)
     for i,(symbol,title,sub,tag,color) in enumerate(items):
         col=i%4; row=i//4
         cx=125+col*250
-        top=39+row*165
-        # Staggered pop-in and a soft settle. No card, border or tile.
-        t=max(0,min(1,(frame-i*2.1)/6))
-        if t<=0: continue
+        top=39+row*190
+        # Staggered spring-like entrance, then a small settle.
+        elapsed=frame-i*2.5
+        if elapsed<0: continue
+        t=min(1.0,elapsed/9.0)
         ease=1-(1-t)**3
-        bob=int((1-ease)*13)
-        # Center the native gold trophy emoji.
+        bounce=math.sin(min(1,t)*math.pi)*5
+        bob=int((1-ease)*17-bounce)
         box=d.textbbox((0,0),symbol,font=emoji)
-        ew,eh=box[2]-box[0],box[3]-box[1]
+        ew=box[2]-box[0]
         d.text((cx-ew//2,top-18-bob),symbol,font=emoji,embedded_color=True)
-        # Label sits directly under the floating trophy.
+        # Tiny moving gold glints during the entrance only.
+        if elapsed<9:
+            phase=elapsed/9
+            for j in range(2):
+                angle=phase*math.pi*2+j*math.pi
+                sx=int(cx+53*math.cos(angle))
+                sy=int(top+38+22*math.sin(angle)-bob)
+                star_size=2 if j else 3
+                d.line((sx-star_size,sy,sx+star_size,sy),fill=(255,225,155),width=1)
+                d.line((sx,sy-star_size,sx,sy+star_size),fill=(255,225,155),width=1)
+        # Strong hierarchy and comfortable line spacing.
         tag_width=d.textbbox((0,0),tag,font=tag_font)[2]
-        d.text((cx-tag_width//2,top+105),tag,font=tag_font,fill=color)
+        d.text((cx-tag_width//2,top+112),tag,font=tag_font,fill=color)
         tw=d.textbbox((0,0),title,font=title_font)[2]
-        d.text((cx-tw//2,top+120),title,font=title_font,fill=WHITE)
+        d.text((cx-tw//2,top+132),title,font=title_font,fill=WHITE)
         sw=d.textbbox((0,0),sub,font=sub_font)[2]
-        d.text((cx-sw//2,top+139),sub,font=sub_font,fill=MUTED)
-        # One tiny four-point glint during entrance only.
-        if i==int(frame//2.1) and frame-i*2.1<6:
-            sx=cx+38+int(8*math.sin(frame))
-            sy=top+30+int(5*math.cos(frame))
-            d.line((sx-4,sy,sx+4,sy),fill=(255,224,151),width=1)
-            d.line((sx,sy-4,sx,sy+4),fill=(255,224,151),width=1)
+        d.text((cx-sw//2,top+155),sub,font=sub_font,fill=MUTED)
     return im
 
-frames=[render(f) for f in range(30)]
-frames.append(render(36))
-out=Path("assets/ui/wins-trophy.gif")
+frames=[render(f) for f in range(34)]
+frames.append(render(40))
+out=Path("assets/ui/wins-emoji.gif")
 out.parent.mkdir(parents=True,exist_ok=True)
-frames[0].save(out,save_all=True,append_images=frames[1:],duration=[85]*30+[4200],optimize=True,disposal=2)
-print(f"created {out}: {len(frames)} frames, {W}x{H}, no cards")
+frames[0].save(out,save_all=True,append_images=frames[1:],duration=[75]*34+[4500],optimize=True,disposal=2)
+print(f"created {out}: {len(frames)} frames, {W}x{H}")

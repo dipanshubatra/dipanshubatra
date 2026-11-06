@@ -145,26 +145,43 @@ def terminal():
 
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
-    items = [("7x", "Hackathon Wins", "national-level winner", "#22d3ee"), ("#4", "ECSoC '26 Global Rank", "Tier 1 Developer", GOLD),
-             ("16K+", "LinkedIn Followers", "building in public", "#a78bfa"), ("16+", "Open-source Projects", "Java / Spring ecosystem", "#f472b6")]
-    W, H, cw, gap = 1000, 150, 232, 24
-    defs = ('<clipPath id="r"><rect width="232" height="138" rx="18"/></clipPath>'
-            '<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>')
-    css = ("@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}@keyframes sw{0%{transform:translateX(-120px) skewX(-18deg)}55%,100%{transform:translateX(340px) skewX(-18deg)}}"
-           "@keyframes gl{0%,100%{opacity:.35}50%{opacity:1}}")
-    body = ""
+    # Editorial stat rail: open columns, no repeated card containers.
+    items = [("7x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
+             ("#4", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
+             ("16K+", "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
+             ("16+", "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6")]
+    W, H = 1000, 132
+    defs = ('<linearGradient id="lineBlue" x1="0" x2="1"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>'
+            '<linearGradient id="lineGold" x1="0" x2="1"><stop stop-color="#f5b942" stop-opacity="0"/><stop offset=".5" stop-color="#f5b942"/><stop offset="1" stop-color="#f5b942" stop-opacity="0"/></linearGradient>')
+    css = ("@keyframes rise{from{opacity:0;transform:translateY(13px)}to{opacity:1;transform:translateY(0)}}"
+           "@keyframes draw{from{stroke-dashoffset:150}to{stroke-dashoffset:0}}"
+           "@keyframes trace{0%{stroke-dashoffset:180;opacity:.2}50%{opacity:1}100%{stroke-dashoffset:0;opacity:.25}}"
+           "@keyframes dots{0%,100%{opacity:.35}50%{opacity:1}}"
+           ".n0{animation:rise .85s cubic-bezier(.2,.7,.2,1) both}.n1{animation:rise .85s .16s cubic-bezier(.2,.7,.2,1) both}"
+           ".n2{animation:rise .85s .32s cubic-bezier(.2,.7,.2,1) both}.n3{animation:rise .85s .48s cubic-bezier(.2,.7,.2,1) both}"
+           ".u1{stroke-dasharray:150;stroke-dashoffset:150;animation:draw 1.6s .7s ease-out forwards}"
+           ".trace{stroke-dasharray:180;animation:trace 5s 1.2s ease-in-out infinite}"
+           ".p{animation:dots 2.4s ease-in-out infinite}"
+           "@media(prefers-reduced-motion:reduce){*{animation:none!important;stroke-dashoffset:0!important}}")
+    body = '<path d="M0 122H1000" stroke="#263244" stroke-width="1"/>'
     for i, (num, lab, sub, c) in enumerate(items):
-        x = i * (cw + gap)
-        css += (f".f{i}{{animation:fl {4 + i * .4}s ease-in-out {i * .3}s infinite}}.s{i}{{animation:sw 5s ease-in-out {i * .8}s infinite}}"
-                f".g{i}{{animation:gl 3s ease-in-out {i * .5}s infinite}}")
-        defs += (f'<linearGradient id="n{i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="{c}"/></linearGradient>'
-                 f'<radialGradient id="a{i}" cx=".5" cy="0" r="1"><stop offset="0" stop-color="{c}" stop-opacity=".35"/><stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>')
-        body += (f'<g transform="translate({x} 6)"><g class="f{i}"><rect width="232" height="138" rx="18" fill="#0d1117"/><rect width="232" height="138" rx="18" fill="url(#a{i})"/>'
-                 f'<g clip-path="url(#r)"><rect class="s{i}" width="60" height="138" fill="url(#sh)"/></g>'
-                 f'<text x="116" y="70" text-anchor="middle" font-size="50" font-weight="800" fill="url(#n{i})">{E(num)}</text>'
-                 f'<text x="116" y="98" text-anchor="middle" font-size="14.5" font-weight="600" fill="{WHITE}">{E(lab)}</text>'
-                 f'<text x="116" y="119" text-anchor="middle" font-size="11.5" fill="{MUTED}">{E(sub)}</text>'
-                 f'<rect class="g{i}" width="232" height="138" rx="18" fill="none" stroke="{c}" stroke-width="1.6"/></g></g>')
+        x = 18 + i * 250
+        body += f'<g class="n{i}" transform="translate({x} 0)">'
+        if i:
+            body += '<path d="M0 18V108" stroke="#263244" stroke-width="1"/>'
+        body += (f'<text x="22" y="65" font-size="43" font-weight="750" letter-spacing="-1.5" fill="{c}">{E(num)}</text>'
+                 f'<text x="24" y="88" font-size="10.5" font-weight="700" letter-spacing="1.05" fill="{WHITE}">{E(lab)}</text>'
+                 f'<text x="24" y="106" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
+        if i == 0:
+            body += f'<path d="M22 76H92" stroke="{c}" stroke-width="2" stroke-linecap="round" opacity=".7"/>'
+        elif i == 1:
+            body += f'<path class="u1" d="M22 76H132" stroke="{c}" stroke-width="2.2" stroke-linecap="round" fill="none"/>'
+        elif i == 2:
+            body += f'<path class="trace" d="M22 76H178" stroke="{c}" stroke-width="1.8" fill="none"/>'
+        else:
+            for j in range(5):
+                body += f'<circle class="p" cx="{22+j*12}" cy="76" r="2" fill="{c}" style="animation-delay:{j*.13:.2f}s"/>'
+        body += '</g>'
     wr("metrics.svg", W, H, defs, css, body)
 
 

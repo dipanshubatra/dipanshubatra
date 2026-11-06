@@ -270,17 +270,19 @@ def wins():
              ("FINALIST", "ByteVerse", "Hackathon", "#cbd5e1"), ("GLOBAL RANK 4", "ECSoC 2026", "Tier 1 Developer", "#22d3ee")]
     W, H = 1000, 212
     star = "M0 -11 L3.2 -3.4 11 -3.4 4.8 1.6 7 9.5 0 5 -7 9.5 -4.8 1.6 -11 -3.4 -3.2 -3.4Z"
-    css = "@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes tw{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.18)}}"
+    # Keep achievement tiles still; use only a slow, subtle star highlight.
+    css = "@keyframes tw{0%,100%{opacity:.72;filter:drop-shadow(0 0 1px currentColor)}50%{opacity:1;filter:drop-shadow(0 0 5px currentColor)}}"
     body = ""
     for i, (tag, title, sub, c) in enumerate(items):
         x, y = (i % 4) * 256, (i // 4) * 108
-        css += f".w{i}{{animation:fl {3.6 + (i % 3) * .5}s ease-in-out {i * .25}s infinite}}.s{i}{{transform-box:fill-box;transform-origin:center;animation:tw 2.4s ease-in-out {i * .3}s infinite}}"
+        css += f".w{i}{{transform:translateZ(0)}}.s{i}{{animation:tw 5.8s ease-in-out {i * .22}s infinite}}"
         body += (f'<g class="w{i}"><g transform="translate({x} {y + 6})"><rect width="232" height="92" rx="16" fill="#0d1117" stroke="{c}" stroke-opacity=".5"/>'
                  f'<rect width="232" height="92" rx="16" fill="{c}" fill-opacity=".05"/><circle cx="40" cy="46" r="22" fill="{c}" fill-opacity=".14" stroke="{c}"/>'
                  f'<g transform="translate(40 46) scale(1.15)"><path class="s{i}" d="{star}" fill="{c}"/></g>'
                  f'<text class="m" x="76" y="30" font-size="10" letter-spacing="1.6" fill="{c}">{E(tag)}</text>'
                  f'<text x="76" y="52" font-size="15" font-weight="700" fill="{WHITE}">{E(title)}</text>'
                  f'<text x="76" y="71" font-size="11" fill="{MUTED}">{E(sub)}</text></g></g>')
+    css += "@media(prefers-reduced-motion:reduce){*{animation:none!important}}"
     wr("wins.svg", W, H, "", css, body)
 
 

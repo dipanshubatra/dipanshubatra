@@ -145,44 +145,50 @@ def terminal():
 
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
-    # Editorial stat rail: open columns, no repeated card containers.
-    items = [("7x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
-             ("#4", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
-             ("16K+", "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
-             ("16+", "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6")]
-    W, H = 1000, 132
-    defs = ('<linearGradient id="lineBlue" x1="0" x2="1"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>'
-            '<linearGradient id="lineGold" x1="0" x2="1"><stop stop-color="#f5b942" stop-opacity="0"/><stop offset=".5" stop-color="#f5b942"/><stop offset="1" stop-color="#f5b942" stop-opacity="0"/></linearGradient>')
-    css = ("@keyframes rise{from{opacity:0;transform:translateY(13px)}to{opacity:1;transform:translateY(0)}}"
-           "@keyframes draw{from{stroke-dashoffset:150}to{stroke-dashoffset:0}}"
-           "@keyframes trace{0%{stroke-dashoffset:180;opacity:.2}50%{opacity:1}100%{stroke-dashoffset:0;opacity:.25}}"
-           "@keyframes dots{0%,100%{opacity:.35}50%{opacity:1}}"
-           ".n0{animation:rise .85s cubic-bezier(.2,.7,.2,1) both}.n1{animation:rise .85s .16s cubic-bezier(.2,.7,.2,1) both}"
-           ".n2{animation:rise .85s .32s cubic-bezier(.2,.7,.2,1) both}.n3{animation:rise .85s .48s cubic-bezier(.2,.7,.2,1) both}"
-           ".u1{stroke-dasharray:150;stroke-dashoffset:150;animation:draw 1.6s .7s ease-out forwards}"
-           ".trace{stroke-dasharray:180;animation:trace 5s 1.2s ease-in-out infinite}"
-           ".p{animation:dots 2.4s ease-in-out infinite}"
-           "@media(prefers-reduced-motion:reduce){*{animation:none!important;stroke-dashoffset:0!important}}")
-    body = '<path d="M0 122H1000" stroke="#263244" stroke-width="1"/>'
-    for i, (num, lab, sub, c) in enumerate(items):
+    # Compact About Me counters: rolling digits, open typography, no cards.
+    items = [
+        ("", "7", "x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
+        ("#", "4", "", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
+        ("", "16", "K+", "LINKEDIN FOLLOWERS", "building in public", "#a78bfa"),
+        ("", "16", "+", "OPEN-SOURCE PROJECTS", "Java / Spring ecosystem", "#f472b6"),
+    ]
+    W, H, digit_h = 1000, 116, 38
+    defs = ""
+    css = ("@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}"
+           "@media(prefers-reduced-motion:reduce){*{animation:none!important;transform:none!important}}")
+    body = '<path d="M0 108H1000" stroke="#263244" stroke-width="1"/>'
+    for i, (prefix, digits, suffix, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g transform="translate({x} 0)"><g class="n{i}">'
+        body += f'<g transform="translate({x} 0)"><g style="animation:rise .65s {i*.12:.2f}s cubic-bezier(.2,.7,.2,1) both">'
         if i:
-            body += '<path d="M0 18V108" stroke="#263244" stroke-width="1"/>'
-        body += (f'<text x="22" y="65" font-size="43" font-weight="750" letter-spacing="-1.5" fill="{c}">{E(num)}</text>'
-                 f'<text x="24" y="88" font-size="10.5" font-weight="700" letter-spacing="1.05" fill="{WHITE}">{E(lab)}</text>'
-                 f'<text x="24" y="106" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
-        if i == 0:
-            body += f'<path d="M22 76H92" stroke="{c}" stroke-width="2" stroke-linecap="round" opacity=".7"/>'
-        elif i == 1:
-            body += f'<path class="u1" d="M22 76H132" stroke="{c}" stroke-width="2.2" stroke-linecap="round" fill="none"/>'
-        elif i == 2:
-            body += f'<path class="trace" d="M22 76H178" stroke="{c}" stroke-width="1.8" fill="none"/>'
-        else:
-            for j in range(5):
-                body += f'<circle class="p" cx="{22+j*12}" cy="76" r="2" fill="{c}" style="animation-delay:{j*.13:.2f}s"/>'
+            body += '<path d="M0 12V96" stroke="#263244" stroke-width="1"/>'
+        cursor = 22
+        if prefix:
+            body += f'<text x="{cursor}" y="44" font-size="32" font-weight="750" fill="{c}">{E(prefix)}</text>'
+            cursor += 23
+        clip_id = f"counter{i}"
+        defs += f'<clipPath id="{clip_id}"><rect x="{cursor-2}" y="10" width="{len(digits)*25+4}" height="38"/></clipPath>'
+        body += f'<g clip-path="url(#{clip_id})">'
+        for j, digit in enumerate(digits):
+            target = int(digit)
+            cls = f"roll{i}{j}"
+            if target:
+                css += (f"@keyframes {cls}{{from{{transform:translateY(0)}}to{{transform:translateY(-{target*digit_h}px)}}}}"
+                        f".{cls}{{animation:{cls} 1.65s {i*.12+j*.08:.2f}s steps({target},end) forwards}}")
+            else:
+                css += f".{cls}{{transform:translateY(0)}}"
+            body += f'<g class="{cls}" transform="translate({cursor+j*25} 0)">'
+            for value in range(10):
+                body += f'<text x="0" y="{38+value*digit_h}" font-size="34" font-weight="780" letter-spacing="-1.5" fill="{c}">{value}</text>'
+            body += '</g>'
+        body += '</g>'
+        cursor += len(digits)*25 + 2
+        if suffix:
+            body += f'<text x="{cursor}" y="44" font-size="25" font-weight="700" fill="{c}">{E(suffix)}</text>'
+        body += (f'<text x="22" y="69" font-size="10" font-weight="700" letter-spacing="1.0" fill="{WHITE}">{E(lab)}</text>'
+                 f'<text x="22" y="87" font-size="10.5" fill="{MUTED}">{E(sub)}</text>')
         body += '</g></g>'
-    wr("metrics-rail-v2.svg", W, H, defs, css, body)
+    wr("metrics-countup.svg", W, H, defs, css, body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

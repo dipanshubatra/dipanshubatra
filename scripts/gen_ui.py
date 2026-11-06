@@ -55,52 +55,73 @@ def hero():
     W, H = 1000, 400
     glyphs = ["{ }", "</>", "();", "01", "#", "=>", "&&", "[ ]", "λ", "::", "++", "!=", "SELECT", "@Bean"]
     parts = ""
-    for _ in range(20):
-        parts += (f'<text class="m" x="{random.randint(20, 980)}" y="{H + 10}" font-size="{random.randint(12, 22)}" '
-                  f'fill="#7dd3fc" style="animation:rise {random.uniform(8, 15):.1f}s linear {random.uniform(0, 12):.1f}s infinite;opacity:0">'
-                  f'{E(random.choice(glyphs))}</text>')
-    chips = [("ECSoC '26  ·  Global Rank 4", GOLD), ("7x Hackathon Winner", CYAN), ("Backend Intern @ Enginow", VIOLET)]
-    widths = [pw(t, 14, 34) for t, _ in chips]
-    x = (W - sum(widths) - 16 * (len(chips) - 1)) / 2
+    for _ in range(24):
+        x, y = random.randint(24, 976), random.randint(390, 470)
+        parts += (f'<text class="m codefloat" x="{x}" y="{y}" font-size="{random.randint(12, 21)}" '
+                  f'fill="#8be9fd" opacity="0">{E(random.choice(glyphs))}</text>')
+    embers = ""
+    for i in range(34):
+        x, y = random.randint(18, 982), random.randint(80, 390)
+        r = random.choice([1.2, 1.6, 2.0, 2.4])
+        delay = random.uniform(0, 9)
+        dur = random.uniform(7, 13)
+        color = random.choice(["#fb923c", "#f97316", "#fbbf24", "#22d3ee"])
+        embers += (f'<circle class="ember e{i%6}" cx="{x}" cy="{y}" r="{r}" fill="{color}" '
+                   f'style="animation-delay:{delay:.2f}s;animation-duration:{dur:.2f}s"/>')
+    chips = [("ECSoC '26  ·  GLOBAL RANK 4", GOLD), ("7x HACKATHON WINNER", CYAN), ("BACKEND INTERN @ ENGINOW", VIOLET)]
+    widths = [pw(t, 13, 34) for t, _ in chips]
+    x = (W - sum(widths) - 14 * (len(chips) - 1)) / 2
     chip_svg = ""
     for i, ((t, c), w) in enumerate(zip(chips, widths)):
-        chip_svg += (f'<g style="animation:fade .9s ease-out {0.7 + i * .2}s both"><rect x="{x:.0f}" y="188" width="{w}" height="38" rx="19" '
-                     f'fill="{c}" fill-opacity=".12" stroke="{c}" stroke-opacity=".8"/><circle class="dot" cx="{x + 18:.0f}" cy="207" r="4" fill="{c}"/>'
-                     f'<text x="{x + w / 2 + 6:.0f}" y="212" text-anchor="middle" font-size="14" font-weight="600" fill="{WHITE}">{E(t)}</text></g>')
-        x += w + 16
+        chip_svg += (f'<g class="chip" style="animation-delay:{.6 + i*.18:.2f}s"><rect x="{x:.0f}" y="188" width="{w}" height="38" rx="19" '
+                     f'fill="{c}" fill-opacity=".10" stroke="{c}" stroke-opacity=".82"/><circle class="dot" cx="{x+17:.0f}" cy="207" r="3.5" fill="{c}"/>'
+                     f'<text x="{x+w/2+5:.0f}" y="212" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing=".4" fill="{WHITE}">{E(t)}</text></g>')
+        x += w + 14
     tcss, tsvg = typing(["Building secure & scalable backend systems", "Java 17/21 • Spring Boot 3 • Redis • PostgreSQL",
-                         "Exactly-once • multi-tenant • distributed", "ECSoC 2026 • Global Rank 4 • Tier 1 Developer",
-                         "Open to SDE & backend internships"], 20, 4, 22, W, 292)
-    wsvg, _ = waves(322)
+                         "Distributed systems • concurrency • system design", "ECSoC 2026 • Global Rank 4 • Tier 1 Developer",
+                         "Open to SDE & backend opportunities"], 22, 4.4, 21, W, 292)
+    wsvg, _ = waves(326)
     defs = f"""
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05070f"/><stop offset=".55" stop-color="#140f3a"/><stop offset="1" stop-color="#0b2a8a"/></linearGradient>
-<linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
-<linearGradient id="ng" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#7dd3fc"/><stop offset=".65" stop-color="#c4b5fd"/><stop offset="1" stop-color="#ffffff"/>
-<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="2 0" dur="7s" repeatCount="indefinite"/></linearGradient>
-<pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".055"/></pattern>
-<filter id="bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="46"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#03050b"/><stop offset=".48" stop-color="#10152c"/><stop offset="1" stop-color="#071b2d"/></linearGradient>
+<linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f97316"/><stop offset=".45" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+<linearGradient id="ng" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff"/><stop offset=".38" stop-color="#67e8f9"/><stop offset=".72" stop-color="#c4b5fd"/><stop offset="1" stop-color="#fb923c"/></linearGradient>
+<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#67e8f9" stop-opacity=".8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<pattern id="gr" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#a5f3fc" stroke-opacity=".07"/></pattern>
+<filter id="bl" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="42"/></filter>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
 <clipPath id="fr"><rect width="{W}" height="{H}" rx="20"/></clipPath>"""
     css = ("@keyframes wv{from{transform:translateX(0)}to{transform:translateX(-500px)}}"
-           "@keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.55}85%{opacity:.2}100%{transform:translateY(-440px);opacity:0}}"
-           "@keyframes grid{from{transform:translateY(0)}to{transform:translateY(40px)}}"
-           "@keyframes d1{0%,100%{transform:translate(0,0)}50%{transform:translate(90px,40px)}}"
-           "@keyframes d2{0%,100%{transform:translate(0,0)}50%{transform:translate(-80px,-30px)}}"
+           "@keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.35}85%{opacity:.16}100%{transform:translateY(-440px);opacity:0}}"
+           "@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(55px,24px)}}"
+           "@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-45px,-22px)}}"
+           "@keyframes ember{0%{transform:translateY(18px) scale(.7);opacity:0}18%{opacity:.8}78%{opacity:.55}100%{transform:translateY(-90px) scale(1.15);opacity:0}}"
+           "@keyframes scan{0%{transform:translateX(-260px);opacity:0}15%{opacity:.8}85%{opacity:.65}100%{transform:translateX(1260px);opacity:0}}"
            "@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}"
-           "@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}"
-           ".grid{animation:grid 4s linear infinite}.o1{animation:d1 12s ease-in-out infinite}.o2{animation:d2 15s ease-in-out infinite}"
-           ".dot{animation:pulse 1.8s infinite}.nm{animation:fade 1.1s ease-out both}.sb{animation:fade 1.1s ease-out .3s both}" + waves(0)[1] + tcss)
+           "@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}"
+           ".grid{opacity:.65}.o1{animation:drift 16s ease-in-out infinite}.o2{animation:drift2 19s ease-in-out infinite}"
+           ".ember{animation:ember 9s ease-in-out infinite;will-change:transform,opacity}.codefloat{animation:rise 13s linear infinite;will-change:transform,opacity}"
+           ".scanline{animation:scan 9s cubic-bezier(.45,0,.55,1) infinite}.chip{animation:fade .9s ease-out both}.dot{animation:pulse 2.8s ease-in-out infinite}"
+           ".nm{animation:fade 1.1s ease-out both}.sb{animation:fade 1.1s ease-out .22s both}" + waves(0)[1] + tcss +
+           "@media(prefers-reduced-motion:reduce){*{animation:none!important}}")
     body = f"""<g clip-path="url(#fr)"><rect width="{W}" height="{H}" fill="url(#bg)"/>
-<circle class="o1" cx="180" cy="120" r="150" fill="#6366f1" opacity=".55" filter="url(#bl)"/>
-<circle class="o2" cx="820" cy="200" r="170" fill="#06b6d4" opacity=".4" filter="url(#bl)"/>
-<rect class="grid" y="-40" width="{W}" height="{H + 80}" fill="url(#gr)"/>
-{parts}
+<circle class="o1" cx="160" cy="120" r="165" fill="#7c3aed" opacity=".38" filter="url(#bl)"/>
+<circle class="o2" cx="850" cy="170" r="180" fill="#0891b2" opacity=".30" filter="url(#bl)"/>
+<circle cx="520" cy="370" r="170" fill="#f97316" opacity=".13" filter="url(#bl)"/>
+<rect class="grid" y="-40" width="{W}" height="{H+80}" fill="url(#gr)"/>
+<path d="M0 82 H1000 M0 318 H1000" stroke="#67e8f9" stroke-opacity=".12" stroke-dasharray="3 8"/>
+{parts}{embers}
+<g opacity=".42"><path d="M0 350 Q150 290 300 350 T600 350 T900 350 T1200 350" fill="none" stroke="#f97316" stroke-width="1.2"/><path d="M0 360 Q150 300 300 360 T600 360 T900 360 T1200 360" fill="none" stroke="#22d3ee" stroke-width="1.2"/></g>
 {wsvg}
-<text class="nm" x="500" y="108" text-anchor="middle" font-size="68" font-weight="800" letter-spacing="2" fill="url(#ng)">Dipanshu Batra</text>
-<text class="sb" x="500" y="150" text-anchor="middle" font-size="19" letter-spacing="1.2" fill="#c7d2fe">Backend Engineer  ·  Java &amp; Spring Boot  ·  Distributed Systems</text>
-{chip_svg}{tsvg}</g>
-<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="20" fill="none" stroke="#fff" stroke-opacity=".12"/>"""
+<text class="m" x="28" y="34" font-size="10" letter-spacing="2" fill="#67e8f9" opacity=".85">SYSTEM ONLINE // DIPANSHU.DEV</text>
+<text class="m" x="972" y="34" text-anchor="end" font-size="10" letter-spacing="1.5" fill="#fb923c" opacity=".9">JAVA • SPRING • DISTRIBUTED</text>
+<text class="nm" x="500" y="108" text-anchor="middle" font-size="68" font-weight="850" letter-spacing="1.5" fill="url(#ng)">Dipanshu Batra</text>
+<text class="sb" x="500" y="150" text-anchor="middle" font-size="18" letter-spacing="1.1" fill="#dbeafe">Backend Engineer  /  Java &amp; Spring Boot  /  Distributed Systems</text>
+{chip_svg}{tsvg}
+<rect class="scanline" x="0" y="0" width="240" height="1.5" fill="url(#scan)" opacity=".7"/>
+<text class="m" x="28" y="378" font-size="10" fill="#64748b">BUILD // SCALE // SHIP</text>
+<text class="m" x="972" y="378" text-anchor="end" font-size="10" fill="#64748b">LATENCY IS A FEATURE</text></g>
+<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="20" fill="none" stroke="#67e8f9" stroke-opacity=".25"/>"""
     wr("hero.svg", W, H, defs, css, body)
-
 
 # ───────────────────────────── TERMINAL ─────────────────────────────
 def terminal():
@@ -271,13 +292,16 @@ def wins():
     W, H = 1000, 212
     star = "M0 -11 L3.2 -3.4 11 -3.4 4.8 1.6 7 9.5 0 5 -7 9.5 -4.8 1.6 -11 -3.4 -3.2 -3.4Z"
     # Keep achievement tiles still; use only a slow, subtle star highlight.
-    css = "@keyframes tw{0%,100%{opacity:.72;filter:drop-shadow(0 0 1px currentColor)}50%{opacity:1;filter:drop-shadow(0 0 5px currentColor)}}"
+    css = ("@keyframes tw{0%,100%{opacity:.72;filter:drop-shadow(0 0 1px currentColor)}50%{opacity:1;filter:drop-shadow(0 0 6px currentColor)}}"
+           "@keyframes sweep{0%,72%{transform:translateX(-270px);opacity:0}78%{opacity:.55}92%{opacity:.25}100%{transform:translateX(270px);opacity:0}}"
+           "@keyframes aura{0%,100%{stroke-opacity:.48}50%{stroke-opacity:.9}}")
     body = ""
     for i, (tag, title, sub, c) in enumerate(items):
         x, y = (i % 4) * 256, (i // 4) * 108
-        css += f".w{i}{{transform:translateZ(0)}}.s{i}{{animation:tw 5.8s ease-in-out {i * .22}s infinite}}"
-        body += (f'<g class="w{i}"><g transform="translate({x} {y + 6})"><rect width="232" height="92" rx="16" fill="#0d1117" stroke="{c}" stroke-opacity=".5"/>'
-                 f'<rect width="232" height="92" rx="16" fill="{c}" fill-opacity=".05"/><circle cx="40" cy="46" r="22" fill="{c}" fill-opacity=".14" stroke="{c}"/>'
+        css += (f".w{i}{{transform:translateZ(0)}}.s{i}{{animation:tw 5.8s ease-in-out {i * .22}s infinite}}"
+                f".shine{i}{{animation:sweep 7.5s cubic-bezier(.4,0,.2,1) {i * .55}s infinite}}.edge{i}{{animation:aura 5.5s ease-in-out {i * .3}s infinite}}")
+        body += (f'<g class="w{i}"><g transform="translate({x} {y + 6})"><defs><clipPath id="winclip{i}"><rect width="232" height="92" rx="16"/></clipPath></defs><rect width="232" height="92" rx="16" fill="#0d1117" stroke="{c}" stroke-opacity=".65"/>'
+                 f'<rect width="232" height="92" rx="16" fill="{c}" fill-opacity=".065"/><rect class="edge{i}" x=".7" y=".7" width="230.6" height="90.6" rx="15" fill="none" stroke="{c}" stroke-width="1.3"/><g clip-path="url(#winclip{i})"><path class="shine{i}" d="M-40 0 L12 0 L92 92 L38 92Z" fill="#fff" opacity="0"/></g><circle cx="40" cy="46" r="22" fill="{c}" fill-opacity=".14" stroke="{c}"/>'
                  f'<g transform="translate(40 46) scale(1.15)"><path class="s{i}" d="{star}" fill="{c}"/></g>'
                  f'<text class="m" x="76" y="30" font-size="10" letter-spacing="1.6" fill="{c}">{E(tag)}</text>'
                  f'<text x="76" y="52" font-size="15" font-weight="700" fill="{WHITE}">{E(title)}</text>'

@@ -145,7 +145,7 @@ def terminal():
 
 # ───────────────────────────── METRICS ─────────────────────────────
 def metrics():
-    # Premium editorial metrics: always-visible values, open layout, no cards.
+    # Static, cache-safe editorial metrics: precise absolute coordinates, no cards.
     items = [
         ("7x", "HACKATHON WINS", "national-level winner", "#22d3ee"),
         ("#4", "ECSOC '26 GLOBAL RANK", "Tier 1 Developer", GOLD),
@@ -155,23 +155,18 @@ def metrics():
     W, H = 1000, 126
     defs = ('<linearGradient id="rail" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".34" stop-color="#f5b942"/>'
             '<stop offset=".68" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>')
-    css = ("@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}"
-           ".metric{animation:enter .7s cubic-bezier(.2,.7,.2,1) both}"
-           "@media(prefers-reduced-motion:reduce){.metric{animation:none!important}}")
     body = ('<text x="18" y="15" font-size="9" letter-spacing="2" font-weight="600" fill="#64748b">SELECTED HIGHLIGHTS</text>'
             '<path d="M18 25H982" stroke="#263244" stroke-width="1"/>'
             '<rect x="18" y="25" width="964" height="1.5" fill="url(#rail)" opacity=".85"/>')
     for i, (num, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g transform="translate({x} 0)"><g class="metric" style="animation-delay:{i*.09:.2f}s">'
         if i:
-            body += '<path d="M0 43V112" stroke="#263244" stroke-width="1"/>'
-        body += (f'<text x="22" y="77" font-size="43" font-weight="760" letter-spacing="-2" fill="{c}">{E(num)}</text>'
-                 f'<circle cx="24" cy="94" r="2" fill="{c}"/>'
-                 f'<text x="32" y="97" font-size="9.5" font-weight="700" letter-spacing=".8" fill="{WHITE}">{E(lab)}</text>'
-                 f'<text x="22" y="114" font-size="10" fill="{MUTED}">{E(sub)}</text>'
-                 '</g></g>')
-    wr("metrics-premium.svg", W, H, defs, css, body)
+            body += f'<path d="M{x} 43V112" stroke="#263244" stroke-width="1"/>'
+        body += (f'<text x="{x+22}" y="77" font-size="43" font-weight="760" letter-spacing="-2" fill="{c}">{E(num)}</text>'
+                 f'<circle cx="{x+24}" cy="94" r="2" fill="{c}"/>'
+                 f'<text x="{x+32}" y="97" font-size="9.5" font-weight="700" letter-spacing=".8" fill="{WHITE}">{E(lab)}</text>'
+                 f'<text x="{x+22}" y="114" font-size="10" fill="{MUTED}">{E(sub)}</text>')
+    wr("metrics-premium.svg", W, H, defs, "", body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

@@ -20,7 +20,7 @@
 
 <br/>
 
-<img src="assets/ui/metrics-countup.svg?v=688575d" width="100%" alt="Animated About Me achievement counters"/>
+<img src="assets/ui/metrics-countup.svg?v=7770d42" width="100%" alt="Animated About Me achievement counters"/>
 
 <br/>
 

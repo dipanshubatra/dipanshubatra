@@ -66,7 +66,7 @@
 
 <img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
 
-<img src="assets/ui/wins-trophy.gif?v=7df30cd" width="100%" alt="Animated floating gold trophy achievements"/>
+<img src="assets/ui/wins-trophy.gif?v=d7ec178" width="100%" alt="Animated floating gold trophy achievements"/>
 
 <br/>
 

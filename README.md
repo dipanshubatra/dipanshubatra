@@ -1,119 +1,158 @@
-## 🚀 Backend Engineer | Java Developer | Spring Boot Developer | 2nd Year Student
-
-I'm **Dipanshu Batra**, a **Computer Science Engineering Student** at JMIT, focused on building **scalable backend systems**, **secure REST APIs**, and **production-ready software applications**.
-
-I specialize in **Java**, **Spring Boot**, **System Design**, **API Development**, and **Database Engineering**, with hands-on experience building secure, multi-tenant, and distributed backend systems using modern software engineering practices.
-
-- 🔭 Building **CronVault**, a distributed, multi-tenant cron job scheduler with database-level locking and RBAC
-- 🌱 Currently deepening knowledge in **System Design & Distributed Systems**
-- 🐳 Working with **Docker** for containerized backend deployments
-- 🧠 Actively solving **Data Structures & Algorithms** (250+ on LeetCode)
-- 🚀 Open to **Software Engineering & Backend Internships**
-
----
-
-### 🎯 Primary Focus Areas
-
-- Backend Engineering
-- Java & Spring Boot Development
-- REST API Development
-- Authentication & Authorization (JWT, OAuth2, RBAC)
-- Redis Caching & Rate Limiting
-- Distributed Systems Design
-- Database Engineering (PostgreSQL, MySQL)
-- Docker & Containerization
-- Data Structures & Algorithms
-
----
-
-### 🏆 Achievements
-
-- 🥇 1st Place, Techfrontier 2025, IIIT Delhi (500+ participants)
-- 🥇 1st Place, Hackastra, NIT Durgapur
-- 🥇 1st Place, Mukand Utsav 2K26
-- 🚀 Finalist, ByteVerse Hackathon
-- 🤖 Oracle Certified AI Foundation Associate
-- 🎓 Campus Ambassador, IIT Delhi
-
----
-
-### 🌍 Open Source Contributions
-
-- [kRamu81/MedTrack_Application](https://github.com/kRamu81/MedTrack_Application) — [94 commits](https://github.com/kRamu81/MedTrack_Application/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
-- [Nicode2707/MailGenie](https://github.com/Nicode2707/MailGenie) — [24 commits](https://github.com/Nicode2707/MailGenie/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
-
----
-
-### 💡 What I Build
-
-- Distributed & Multi-Tenant Backend Systems
-- Secure Authentication & Authorization Systems (JWT, OAuth2, RBAC)
-- Payment-Integrated Backend Systems (Cashfree)
-- RESTful APIs with Full API Documentation (Swagger/OpenAPI)
-- Load-Tested, Production-Ready Backends
-
----
-
-### 🔍 Keywords
-
-`Java Developer` • `Backend Engineer` • `Spring Boot Developer` • `REST API Developer` • `System Design` • `Distributed Systems` • `Multi-Tenancy` • `Docker` • `Redis` • `PostgreSQL` • `MySQL` • `Authentication` • `JWT` • `OAuth2` • `RBAC` • `Rate Limiting` • `Backend Development` • `API Development` • `Linux` • `Data Structures` • `Algorithms` • `Open Source` • `Competitive Programming`
-
----
-
 <div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f0c29,50:302b63,100:1055e0&text=Dipanshu%20Batra&fontSize=56&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Backend%20Engineer%20%C2%B7%20Java%20%26%20Spring%20Boot%20%C2%B7%20Distributed%20Systems&descSize=18&descAlignY=60" width="100%" alt="header"/>
+
+<a href="https://leetcode.com/u/dipanshubatra">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&height=45&lines=Building+secure+%26+scalable+backend+systems;Java+%E2%80%A2+Spring+Boot+%E2%80%A2+Redis+%E2%80%A2+PostgreSQL;Distributed+%26+multi-tenant+architectures;ECSOC+%2726+Master+Contributor+%F0%9F%8F%85;Open+to+Backend+%2F+SDE+Internships+%F0%9F%9A%80" alt="typing"/>
+</a>
+
+<br/>
+
+<a href="https://linkedin.com/in/dipanshubatra"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://leetcode.com/u/dipanshubatra"><img src="https://img.shields.io/badge/LeetCode-250%2B_Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
+<a href="https://x.com/dipanshubatra_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=dipanshubatra&style=for-the-badge&color=1055e0&label=PROFILE+VIEWS"/>
+
 </div>
 
----
+<br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=12111d&color=ffffff&line=1055e0&point=00ff11&area=true&hide_border=true" alt="contribution-graph" width="100%">
+## ⚡ About Me
 
----
+> Final-year **Computer Science Engineering** student at **JMIT Radaur** who builds **scalable backend systems**, **secure REST APIs** and **production-ready software**. I like problems where correctness under load actually matters: locking, caching, auth, and payments.
 
-# 💻 Tech Stack & Skills
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-005C84?style=for-the-badge)
+### 🔭 Currently
+- Building **CronVault**: distributed, multi-tenant cron scheduler with DB-level locking & RBAC
+- Deepening **System Design & Distributed Systems**
+- Shipping containerized backends with **Docker**
 
-## Backend & APIs
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+</td>
+<td width="50%" valign="top">
 
-## Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+### 🎯 Focus
+- Backend Engineering · REST APIs
+- AuthN/AuthZ: JWT, OAuth2, RBAC
+- Redis caching & rate limiting
+- **250+** LeetCode problems solved
+- 🚀 **Open to SDE & Backend internships**
 
-## DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+</td>
+</tr>
+</table>
 
-## Data Structures & Problem Solving
-![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-0A0A0A?style=for-the-badge)
+<br/>
 
----
+## 🏅 ECSOC '26 · Elite Coders Summer of Code
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=F7A033&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+Spring+Boot+Developer;System+Design+%26+Distributed+Systems;Building+Production+Ready+APIs;Docker+%E2%80%A2+Redis+%E2%80%A2+PostgreSQL;Open+To+Software+Engineering+Internships)](https://leetcode.com/u/dipanshubatra)
+<div align="center">
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true)
+**Completed the full progression, all the way to the Master tier.**
 
----
+<img src="assets/ecsoc/card-contributor.svg" width="150" alt="Contributor"/>
+<img src="assets/ecsoc/card-2.svg" width="150" alt="Level 2"/>
+<img src="assets/ecsoc/card-3.svg" width="150" alt="Level 3"/>
+<img src="assets/ecsoc/card-4.svg" width="150" alt="Level 4"/>
+<img src="assets/ecsoc/card-5.svg" width="150" alt="Level 5"/>
+<img src="assets/ecsoc/card-6.svg" width="150" alt="Master"/>
 
-## 🌐 Connect with Me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dipanshubatra)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/dipanshubatra)
-[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/dipanshubatra_)
+</div>
 
----
+<br/>
 
-### 🔝 Top Contributed Repositories /🌍 Open Source Contributions
+## 🏆 Achievements
 
-- [kRamu81/MedTrack_Application](https://github.com/kRamu81/MedTrack_Application) — [94 commits](https://github.com/kRamu81/MedTrack_Application/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
-- [Nicode2707/MailGenie](https://github.com/Nicode2707/MailGenie) — [24 commits](https://github.com/Nicode2707/MailGenie/commits?author=dipanshubatra&since=2026-06-30&until=2026-07-21)
-- Contributed to **5+ other open-source repositories**
+<div align="center">
 
-*Building distributed, secure backend systems engineered for real-world reliability.*
+| 🥇 1st Place | 🥇 1st Place | 🥇 1st Place | 🥇 1st Place |
+|:---:|:---:|:---:|:---:|
+| **TechFrontier 2025**<br/>IIIT Delhi · 500+ teams | **Hackastra**<br/>NIT Durgapur | **Ideathon 2026**<br/>JMIT Radaur | **Mukand Utsav 2K26** |
+
+| 🚀 Finalist | 🛡️ Master Tier | 🤖 Certified | 🎓 Ambassador |
+|:---:|:---:|:---:|:---:|
+| **ByteVerse Hackathon** | **ECSOC '26**<br/>Contributor | **Oracle** AI Foundations Associate | **Campus Ambassador**<br/>IIT Delhi |
+
+</div>
+
+<br/>
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,hibernate,python,postgres,mysql,redis,supabase&perline=8" alt="backend"/>
+<br/>
+<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,idea,postman,react,vite&perline=9" alt="tools"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
+<img src="https://img.shields.io/badge/OAuth2-EB5424?style=flat-square&logo=auth0&logoColor=white"/>
+<img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black"/>
+<img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/JMeter-D22128?style=flat-square&logo=apachejmeter&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cashfree-Payments-6C47FF?style=flat-square"/>
+
+</div>
+
+<br/>
+
+## 💡 What I Build
+
+| | |
+|---|---|
+| 🧩 **Distributed systems** | Multi-tenant services with database-level locking |
+| 🔐 **Secure auth** | JWT, OAuth2 and RBAC done properly |
+| 💳 **Payments** | Cashfree-integrated backends |
+| 📄 **Documented APIs** | Full Swagger / OpenAPI coverage |
+| ⚙️ **Production-ready** | Redis caching, rate limiting, JMeter load tests |
+
+<br/>
+
+## 🌍 Open Source
+
+<div align="center">
+
+<a href="https://github.com/kRamu81/MedTrack_Application"><img src="https://img.shields.io/badge/MedTrack_Application-94_commits-1055e0?style=for-the-badge&logo=github"/></a>
+<a href="https://github.com/Nicode2707/MailGenie"><img src="https://img.shields.io/badge/MailGenie-24_commits-8957e5?style=for-the-badge&logo=github"/></a>
+<img src="https://img.shields.io/badge/+5_other_repos-contributed-2ea043?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
+
+</div>
+
+<br/>
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=dipanshubatra&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=16" alt="stats"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dipanshubatra&layout=compact&theme=tokyonight&hide_border=true&border_radius=16" alt="langs"/>
+
+<img src="https://streak-stats.demolab.com?user=dipanshubatra&theme=tokyonight&hide_border=true&border_radius=16" alt="streak"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dipanshubatra&bg_color=0d1117&color=00e5ff&line=1055e0&point=ffffff&area=true&hide_border=true" width="100%" alt="activity"/>
+
+<a href="https://leetcode.com/u/dipanshubatra"><img src="https://leetcard.jacoblin.cool/dipanshubatra?theme=dark&font=Baloo%20Chettan%202&ext=contest&animation=true" alt="leetcode"/></a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### 🤝 Let's build something reliable together
+
+<a href="https://linkedin.com/in/dipanshubatra"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:1055e0,50:302b63,100:0f0c29&section=footer" width="100%" alt="footer"/>
+
+</div>
+
+<!--
+Keywords: Java Developer, Backend Engineer, Spring Boot Developer, REST API, System Design,
+Distributed Systems, Multi-Tenancy, Docker, Redis, PostgreSQL, MySQL, JWT, OAuth2, RBAC,
+Rate Limiting, Linux, Data Structures, Algorithms, Open Source, ECSOC 2026
+-->

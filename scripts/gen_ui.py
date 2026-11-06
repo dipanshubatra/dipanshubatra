@@ -166,9 +166,6 @@ def metrics():
         if prefix:
             body += f'<text x="{cursor}" y="44" font-size="32" font-weight="750" fill="{c}">{E(prefix)}</text>'
             cursor += 23
-        clip_id = f"counter{i}"
-        defs += f'<clipPath id="{clip_id}"><rect x="{cursor-2}" y="10" width="{len(digits)*25+4}" height="38"/></clipPath>'
-        body += f'<g clip-path="url(#{clip_id})">'
         for j, digit in enumerate(digits):
             target = int(digit)
             cls = f"roll{i}{j}"
@@ -177,11 +174,10 @@ def metrics():
                         f".{cls}{{animation:{cls} 1.65s {i*.12+j*.08:.2f}s steps({target},end) forwards}}")
             else:
                 css += f".{cls}{{transform:translateY(0)}}"
-            body += f'<g class="{cls}" transform="translate({cursor+j*25} 0)">'
+            body += f'<svg x="{cursor+j*25}" y="10" width="25" height="38" viewBox="0 0 25 38" overflow="hidden"><g class="{cls}" transform="translate(0 0)">'
             for value in range(10):
-                body += f'<text x="0" y="{38+value*digit_h}" font-size="34" font-weight="780" letter-spacing="-1.5" fill="{c}">{value}</text>'
-            body += '</g>'
-        body += '</g>'
+                body += f'<text x="0" y="{28+value*digit_h}" font-size="34" font-weight="780" letter-spacing="-1.5" fill="{c}">{value}</text>'
+            body += '</g></svg>'
         cursor += len(digits)*25 + 2
         if suffix:
             body += f'<text x="{cursor}" y="44" font-size="25" font-weight="700" fill="{c}">{E(suffix)}</text>'

@@ -125,18 +125,20 @@ def hero():
 
 # ───────────────────────────── TERMINAL ─────────────────────────────
 def terminal():
-    W, H, T = 1000, 318, 22
-    script = [("$ whoami", "p", .6, 1.0),
-              ("dipanshu_batra  |  backend engineer  |  java · spring boot · distributed systems", "o", 1.9, 2.0),
-              ("$ cat now.txt", "p", 4.4, .9),
-              ("Backend Developer Intern @ Enginow  ·  building CronVault, a multi-tenant job scheduler", "o", 5.5, 2.2),
-              ("$ ls ./achievements", "p", 8.4, 1.1),
-              ("ecsoc-global-rank-4/   7x-hackathon-winner/   16k-linkedin/   16+-open-source-projects/", "o", 9.7, 2.1),
-              ("$ echo $STATUS", "p", 12.6, 1.0),
-              ("open to SDE & backend internships", "o", 13.8, 1.6)]
+    W, H, T = 1000, 350, 20
+    script = [("$ whoami", "p", .5, .8),
+              ("dipanshu_batra  ·  backend engineer  ·  java / distributed systems", "o", 1.4, 1.5),
+              ("$ stack --core", "p", 3.3, .8),
+              ("Java 17/21  ·  Spring Boot 3  ·  Spring Security  ·  Redis  ·  PostgreSQL", "o", 4.2, 1.6),
+              ("$ projects --active", "p", 6.2, .9),
+              ("NovaMart  [8 services]     CronVault  [multi-tenant scheduler]", "o", 7.2, 1.5),
+              ("$ benchmark --cached", "p", 9.2, .9),
+              ("JMeter  ·  50,000 requests  ·  1,808 req/s  ·  0% errors", "o", 10.2, 1.5),
+              ("$ status --career", "p", 12.2, .9),
+              ("OPEN  ·  SDE / Backend opportunities", "o", 13.2, 1.4)]
     css = ("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}"
            ".cur{animation:blink 1s steps(1) infinite}.dotb{animation:pulse 2s infinite}")
-    body, y, cw, fs = "", 90, 8.45, 14
+    body, y, cw, fs = "", 82, 8.15, 13.5
     for i, (txt, kind, st, dur) in enumerate(script):
         wpx = len(txt) * cw
         s, te, hold = st / T * 100, (st + dur) / T * 100, 94
@@ -149,9 +151,10 @@ def terminal():
             txt_svg = f'<tspan fill="{fill}">{E(txt)}</tspan>'
         body += (f'<clipPath id="lc{i}"><rect class="LC{i}" x="34" y="{y - 16}" width="0" height="24"/></clipPath>'
                  f'<text class="m" x="34" y="{y}" font-size="{fs}" clip-path="url(#lc{i})">{txt_svg}</text>')
-        y += 23 if kind == "p" else 38
+        y += 21 if kind == "p" else 31
     cur_x = 34 + len(script[-1][0]) * cw + 6
-    css += f"@keyframes show{{0%,{13.8 / T * 100:.1f}%{{opacity:0}}{14.5 / T * 100:.1f}%,94%{{opacity:1}}94.1%,100%{{opacity:0}}}}.sh{{animation:show {T}s linear infinite}}"
+    last_start = script[-1][2]
+    css += f"@keyframes show{{0%,{last_start / T * 100:.1f}%{{opacity:0}}{(last_start + .7) / T * 100:.1f}%,94%{{opacity:1}}94.1%,100%{{opacity:0}}}}.sh{{animation:show {T}s linear infinite}}"
     body += f'<g class="sh"><rect class="cur" x="{cur_x:.0f}" y="{y - 38 - 14}" width="9" height="18" fill="#4ade80"/></g>'
     defs = ('<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/>'
             '<stop offset="1" stop-color="#22d3ee"/></linearGradient><linearGradient id="bgt" x1="0" y1="0" x2="0" y2="1">'
@@ -283,6 +286,65 @@ def journey():
     wr("journey.svg", W, H, defs, css, body)
 
 
+
+# ───────────────────────────── MICROSERVICES MAP ─────────────────────────────
+def architecture():
+    W, H = 1000, 330
+    services = [
+        ("IDENTITY", "Auth · JWT · OAuth2", 130, 142, "#a78bfa"),
+        ("CATALOG", "Products · Search", 375, 142, "#22d3ee"),
+        ("INVENTORY", "Stock · Reservations", 620, 142, "#f5b942"),
+        ("CART", "Cart · Expiry", 765, 142, "#f472b6"),
+        ("ORDER", "Checkout · Lifecycle", 255, 244, "#22d3ee"),
+        ("PAYMENT", "Cashfree · Webhooks", 500, 244, "#f5b942"),
+        ("NOTIFICATION", "Email · Events", 745, 244, "#a78bfa"),
+    ]
+    defs = """<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#080b12"/></linearGradient>
+    <linearGradient id="gw" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>"""
+    css = ("@keyframes flow{to{stroke-dashoffset:-36}}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:.95}}"
+           "@keyframes node{0%,100%{stroke-opacity:.48}50%{stroke-opacity:.95}}"
+           ".route{stroke-dasharray:5 8;animation:flow 5s linear infinite}.hub{animation:pulse 4s ease-in-out infinite}"
+           ".svc{animation:node 5s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}")
+    body = '<rect width="1000" height="330" rx="18" fill="url(#bg)" stroke="#263449"/>'
+    body += '<text class="m" x="28" y="27" font-size="10" letter-spacing="2" fill="#64748b">NOVAMART / SERVICE TOPOLOGY</text>'
+    # Gateway hub and fan-out routes
+    body += '<g class="hub"><rect x="375" y="43" width="250" height="58" rx="13" fill="#102a36" stroke="url(#gw)" stroke-width="1.8"/><text x="500" y="68" text-anchor="middle" font-size="15" font-weight="800" fill="#e2e8f0">API GATEWAY</text><text class="m" x="500" y="86" text-anchor="middle" font-size="10" fill="#67e8f9">ROUTING · SECURITY · TRACE ID</text></g>'
+    for _, _, x, y, c in services:
+        target_x = x + 94
+        body += f'<path class="route" d="M500 101 V119 H{target_x} V{y}" fill="none" stroke="{c}" stroke-opacity=".48" stroke-width="1.5"/>'
+    for i, (name, sub, x, y, c) in enumerate(services):
+        body += (f'<g style="animation-delay:{i*.25:.2f}s"><rect class="svc" x="{x}" y="{y}" width="188" height="62" rx="12" fill="#111827" stroke="{c}" stroke-opacity=".72"/>'
+                 f'<circle cx="{x+15}" cy="{y+18}" r="3" fill="{c}"/><text class="m" x="{x+27}" y="{y+22}" font-size="11" font-weight="700" letter-spacing=".8" fill="{c}">{name}</text>'
+                 f'<text x="{x+14}" y="{y+44}" font-size="11.5" fill="#cbd5e1">{sub}</text></g>')
+    body += '<text class="m" x="28" y="318" font-size="9.5" fill="#64748b">CONCEPTUAL SERVICE MAP  ·  EACH BOX REPRESENTS AN INDEPENDENT MICROSERVICE</text>'
+    wr("architecture.svg", W, H, defs, css, body)
+
+
+# ───────────────────────────── PERFORMANCE SNAPSHOT ─────────────────────────────
+def performance():
+    W, H = 1000, 260
+    defs = """<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#080b12"/></linearGradient>
+    <linearGradient id="cache" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+    <linearGradient id="base" x1="0" x2="1"><stop stop-color="#64748b"/><stop offset="1" stop-color="#94a3b8"/></linearGradient>"""
+    css = ("@keyframes grow{from{width:0}to{width:var(--w)}}@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}"
+           ".live{animation:pulse 3s ease-in-out infinite}@media(prefers-reduced-motion:reduce){*{animation:none!important}}")
+    body = '<rect width="1000" height="260" rx="18" fill="url(#bg)" stroke="#263449"/>'
+    body += '<text class="m" x="28" y="28" font-size="10" letter-spacing="2" fill="#64748b">JMETER / LOAD-TEST SNAPSHOT</text>'
+    body += '<text x="28" y="67" font-size="27" font-weight="800" fill="#e2e8f0">Cache changes the throughput curve.</text>'
+    body += '<text x="28" y="91" font-size="11.5" fill="#94a3b8">Previously measured benchmark · 1,000 virtual users × 50 loops · 50,000 requests</text>'
+    # Bars scale against 1,808 req/s
+    body += '<text class="m" x="28" y="133" font-size="11" fill="#67e8f9">REDIS CACHE ENABLED</text>'
+    body += '<rect x="230" y="116" width="600" height="24" rx="7" fill="#172334"/><rect class="live" x="230" y="116" width="600" height="24" rx="7" fill="url(#cache)"/>'
+    body += '<text x="850" y="135" font-size="16" font-weight="800" fill="#67e8f9">~1,808 req/s</text>'
+    body += '<text class="m" x="28" y="177" font-size="11" fill="#94a3b8">CACHE DISABLED</text>'
+    body += '<rect x="230" y="160" width="600" height="24" rx="7" fill="#172334"/><rect x="230" y="160" width="33" height="24" rx="7" fill="url(#base)"/>'
+    body += '<text x="850" y="179" font-size="16" font-weight="800" fill="#cbd5e1">~100 req/s</text>'
+    body += '<line x1="28" y1="205" x2="972" y2="205" stroke="#263449"/>'
+    body += '<text class="m" x="28" y="232" font-size="10" fill="#4ade80">0% ERRORS</text><text class="m" x="240" y="232" font-size="10" fill="#94a3b8">AVG RESPONSE: 361 ms (cached run)</text><text class="m" x="972" y="232" text-anchor="end" font-size="10" fill="#64748b">BENCHMARK SNAPSHOT · NOT LIVE TELEMETRY</text>'
+    wr("performance.svg", W, H, defs, css, body)
+
+
 # ───────────────────────────── WINS ─────────────────────────────
 def wins():
     items = [("WINNER", "Techfrontier 2025", "IIIT Delhi · 500+ participants", GOLD), ("WINNER", "Hackastra", "NIT Durgapur", GOLD),
@@ -350,7 +412,7 @@ def oss(key, big, label, sub, c):
     wr(f"oss-{key}.svg", W, H, defs, css, body)
 
 
-hero(); terminal(); metrics(); marquee()
+hero(); terminal(); metrics(); marquee(); architecture(); performance()
 project("novamart.svg", "FEATURED PROJECT  /  01", "NovaMart", "Distributed e-commerce platform  ·  React + Spring Boot",
         [("0%", "error rate"), ("182ms", "avg latency"), ("326ms", "P95 latency")],
         ["5,250+ concurrent requests, verified with JMeter", "JWT rotation + Google OAuth2 + Redis OTP store",
@@ -362,8 +424,9 @@ project("cronvault.svg", "FEATURED PROJECT  /  02", "CronVault", "Multi-tenant d
          "Lua sliding-window rate limiter, fails open to DB", "Per-tenant circuit breakers using Resilience4j"],
         ["Java 21", "Spring Boot 3", "Spring Security", "MySQL", "Redis + Lua", "Resilience4j"], "#f472b6", "#f5b942")
 journey(); wins()
-for k, n, t in [("about", "01", "About Me"), ("ecsoc", "02", "ECSoC '26"), ("projects", "03", "Featured Projects"), ("stack", "04", "Tech Stack"),
-                ("wins", "05", "Achievements"), ("journey", "06", "Journey"), ("oss", "07", "Open Source"), ("stats", "08", "GitHub Analytics")]:
+for k, n, t in [("about", "01", "About Me"), ("ecsoc", "02", "ECSoC '26"), ("projects", "03", "Featured Projects"), ("architecture", "04", "Microservices Architecture"),
+                ("performance", "05", "Performance Engineering"), ("stack", "06", "Tech Stack"), ("wins", "07", "Achievements"),
+                ("journey", "08", "Journey"), ("oss", "09", "Open Source"), ("stats", "10", "GitHub Analytics")]:
     title(k, n, t)
 for k, l, c in [("linkedin", "LinkedIn", "#0a66c2"), ("github", "GitHub", "#a78bfa"), ("leetcode", "LeetCode", "#ffa116"),
                 ("x", "X / Twitter", "#e2e8f0"), ("portfolio", "Portfolio", "#22d3ee")]:

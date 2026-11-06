@@ -58,6 +58,20 @@
 
 <br/>
 
+<img src="assets/ui/t-architecture.svg" width="100%" alt="Microservices Architecture"/>
+
+<img src="assets/ui/architecture.svg" width="100%" alt="NovaMart microservices architecture: API Gateway, Identity, Catalog, Inventory, Cart, Order, Payment and Notification services"/>
+
+<sub>NovaMart service topology · API Gateway routes requests across seven domain services. Diagram is a conceptual overview of the service boundaries.</sub>
+
+<br/>
+
+<img src="assets/ui/t-performance.svg" width="100%" alt="Performance Engineering"/>
+
+<img src="assets/ui/performance.svg" width="100%" alt="JMeter load-test snapshot comparing Redis cache enabled and disabled throughput"/>
+
+<br/>
+
 <img src="assets/ui/t-stack.svg" width="100%" alt="Tech Stack"/>
 
 <img src="assets/ui/marquee.svg" width="100%" alt="Tech stack: Java, Spring Boot, Spring Security, PostgreSQL, MySQL, Redis, Docker, JMeter and more"/>

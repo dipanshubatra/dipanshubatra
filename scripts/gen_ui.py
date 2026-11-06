@@ -182,7 +182,7 @@ def metrics():
             for j in range(5):
                 body += f'<circle class="p" cx="{22+j*12}" cy="76" r="2" fill="{c}" style="animation-delay:{j*.13:.2f}s"/>'
         body += '</g>'
-    wr("metrics.svg", W, H, defs, css, body)
+    wr("metrics-rail.svg", W, H, defs, css, body)
 
 
 # ───────────────────────────── MARQUEE ─────────────────────────────

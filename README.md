@@ -20,7 +20,7 @@
 
 <br/>
 
-<img src="assets/ui/metrics.svg?v=73ac502" width="100%" alt="Highlights"/>
+<img src="assets/ui/metrics-rail.svg" width="100%" alt="Animated achievement and engineering highlights"/>
 
 <br/>
 

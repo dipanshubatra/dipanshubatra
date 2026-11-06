@@ -163,14 +163,14 @@ def metrics():
             '<rect x="18" y="25" width="964" height="1.5" fill="url(#rail)" opacity=".85"/>')
     for i, (num, lab, sub, c) in enumerate(items):
         x = 18 + i * 250
-        body += f'<g class="metric" style="animation-delay:{i*.09:.2f}s" transform="translate({x} 0)">'
+        body += f'<g transform="translate({x} 0)"><g class="metric" style="animation-delay:{i*.09:.2f}s">'
         if i:
             body += '<path d="M0 43V112" stroke="#263244" stroke-width="1"/>'
         body += (f'<text x="22" y="77" font-size="43" font-weight="760" letter-spacing="-2" fill="{c}">{E(num)}</text>'
                  f'<circle cx="24" cy="94" r="2" fill="{c}"/>'
                  f'<text x="32" y="97" font-size="9.5" font-weight="700" letter-spacing=".8" fill="{WHITE}">{E(lab)}</text>'
                  f'<text x="22" y="114" font-size="10" fill="{MUTED}">{E(sub)}</text>'
-                 '</g>')
+                 '</g></g>')
     wr("metrics-premium.svg", W, H, defs, css, body)
 
 

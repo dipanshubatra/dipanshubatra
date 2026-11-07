@@ -1,75 +1,103 @@
 #!/usr/bin/env python3
-"""Generates assets/ui/journey.svg (section 06 timeline). Standalone so it never touches other sections.
-Run from repo root:  python3 scripts/gen_journey.py"""
+"""Generates assets/ui/journey-1..6.svg: a vertical checklist timeline, one SVG per milestone.
+Ticks draw top->bottom in sequence and loop. Run from repo root: python3 scripts/gen_journey.py"""
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / "assets" / "ui" / "journey.svg"
-W, H, RY = 1000, 250, 70
-CW, CY, CH = 216, 108, 118
-M = [  # cx, colour, date, title, detail lines
-    (140, "#22d3ee", "2025",           "B.Tech CSE",       ["JMIT Radaur", "2025–2029 · CGPA 7.9"]),
-    (380, "#f5b942", "2025 – 26",      "Hackathon streak", ["7× national-level winner"]),
-    (620, "#f472b6", "SUMMER 2026",    "ECSoC ’26",        ["Global Rank 4", "Tier 1 Developer"]),
-    (860, "#a78bfa", "SEP 2026 – NOW", "Backend Intern",   ["Enginow", "Java 17 · Spring Boot 3"]),
+D = Path(__file__).resolve().parent.parent / "assets" / "ui"
+W, H, NX, NY = 1000, 120, 60, 60
+CX0, CX1, CY0, CY1 = 112, 960, 8, 112
+T, STEP = 12.0, 1.1          # loop length (s), delay between ticks (s)
+
+# tag, title, detail, big metric, metric label, colour, done?
+ITEMS = [
+    ("2025",          "B.Tech CSE",       "JMIT Radaur · 2025–2029",              "7.9",     "CGPA",          "#22d3ee", True),
+    ("2025 – 26",     "Hackathon streak", "National-level wins across the country", "7×",    "WINS",          "#f5b942", True),
+    ("OPEN SOURCE",   "Shipping to open source", "MedTrack · MailGenie · +5 other repos", "118+", "COMMITS", "#34d399", True),
+    ("SUMMER 2026",   "ECSoC ’26",        "Tier 1 Developer · Master Contributor", "#4",     "GLOBAL RANK",   "#f472b6", True),
+    ("SEP 2026 – NOW", "Backend Intern",  "Enginow · Spring Boot 3",              "Java 17", "STACK",         "#a78bfa", True),
+    ("NEXT",          "What’s next",      "Open to Backend &amp; SDE internships",    "→",       "OPEN TO",       "#38bdf8", False),
 ]
 
-defs = ['<linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="60" x2="880">'
-        '<stop offset="0" stop-color="#22d3ee"/><stop offset=".34" stop-color="#f5b942"/>'
-        '<stop offset=".68" stop-color="#f472b6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>',
-        '<linearGradient id="fut" gradientUnits="userSpaceOnUse" x1="880" x2="950">'
-        '<stop offset="0" stop-color="#a78bfa" stop-opacity=".8"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>',
-        '<linearGradient id="tail" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".85"/></linearGradient>',
-        '<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>',
-        '<filter id="gl" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>']
-for i, (cx, c, *_r) in enumerate(M):
-    defs.append(f'<linearGradient id="f{i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{c}" stop-opacity=".13"/><stop offset="1" stop-color="#0d1117" stop-opacity="1"/></linearGradient>')
-    defs.append(f'<clipPath id="k{i}"><rect x="{cx-CW//2}" y="{CY}" width="{CW}" height="{CH}" rx="16"/></clipPath>')
+def mix(a, b):
+    f = lambda h: [int(h[i:i+2], 16) for i in (1, 3, 5)]
+    return "#%02x%02x%02x" % tuple((x + y) // 2 for x, y in zip(f(a), f(b)))
 
-css = ("text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}"
-       ".m{font-family:'Fira Code','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace}"
-       "@keyframes dr{from{transform:scaleX(0)}to{transform:scaleX(1)}}"
-       "@keyframes fd{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}"
-       "@keyframes pl{0%{transform:scale(1);opacity:.55}100%{transform:scale(2.1);opacity:0}}"
-       "@keyframes run{0%{transform:translateX(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateX(820px);opacity:0}}"
-       "@keyframes sw{0%{transform:translateX(-120px) skewX(-20deg)}35%,100%{transform:translateX(340px) skewX(-20deg)}}"
-       "@keyframes lv{0%,100%{opacity:1}50%{opacity:.25}}"
-       "@keyframes nx{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(5px);opacity:1}}"
-       ".rl{transform-box:fill-box;transform-origin:left center;animation:dr 1.5s cubic-bezier(.2,.7,.2,1) both}"
-       ".orb{animation:run 6.5s ease-in-out 1.8s infinite;opacity:0}"
-       ".lv{animation:lv 1.4s ease-in-out infinite}.nx{animation:nx 1.8s ease-in-out infinite}"
-       ".pr{transform-box:fill-box;transform-origin:center}")
-for i in range(4):
-    css += (f".c{i}{{animation:fd .8s ease-out {.3+i*.25:.2f}s both}}"
-            f".p{i}{{animation:pl 2.6s ease-out {i*.5:.1f}s infinite}}"
-            f".s{i}{{animation:sw 6s ease-in-out {2+i*.6:.1f}s infinite}}")
+def pct(s): return round(s / T * 100, 2)
 
-b = [f'<rect x="60" y="{RY-2}" width="820" height="4" rx="2" fill="#30363d" opacity=".5"/>',
-     f'<rect class="rl" x="60" y="{RY-2}" width="820" height="4" rx="2" fill="url(#rail)"/>',
-     f'<line x1="884" y1="{RY}" x2="944" y2="{RY}" stroke="url(#fut)" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>',
-     f'<path class="nx" d="M948 {RY-5} L956 {RY} L948 {RY+5}" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
-     f'<g transform="translate(60 {RY})"><g class="orb"><rect x="-70" y="-1.5" width="70" height="3" fill="url(#tail)"/>'
-     '<circle r="9" fill="#fff" filter="url(#gl)"/><circle r="3.5" fill="#fff"/></g></g>']
-for i, (cx, c, date, title, lines) in enumerate(M):
-    b.append(f'<g class="c{i}">')
-    b.append(f'<circle class="pr p{i}" cx="{cx}" cy="{RY}" r="10" fill="{c}"/>')
-    b.append(f'<circle cx="{cx}" cy="{RY}" r="17" fill="none" stroke="{c}" stroke-opacity=".18"/>')
-    b.append(f'<circle cx="{cx}" cy="{RY}" r="10" fill="#0d1117" stroke="{c}" stroke-width="3"/><circle cx="{cx}" cy="{RY}" r="4" fill="{c}"/>')
-    b.append(f'<line x1="{cx}" y1="{RY+17}" x2="{cx}" y2="{CY}" stroke="{c}" stroke-opacity=".55"/>')
-    b.append(f'<rect x="{cx-CW//2}" y="{CY}" width="{CW}" height="{CH}" rx="16" fill="url(#f{i})" stroke="{c}" stroke-opacity=".55"/>')
-    b.append(f'<rect x="{cx-18}" y="{CY}" width="36" height="3" rx="1.5" fill="{c}"/>')
-    b.append(f'<g clip-path="url(#k{i})"><rect class="s{i}" x="{cx-CW//2}" y="{CY}" width="70" height="{CH}" fill="url(#sh)"/></g>')
-    b.append(f'<text class="m" x="{cx}" y="{CY+30}" text-anchor="middle" font-size="11.5" letter-spacing="1.5" fill="{c}">{date}</text>')
-    b.append(f'<text x="{cx}" y="{CY+60}" text-anchor="middle" font-size="19" font-weight="800" fill="#f1f5f9">{title}</text>')
-    y0 = CY + 84 if len(lines) == 2 else CY + 91
-    for j, t in enumerate(lines):
-        b.append(f'<text x="{cx}" y="{y0+j*17}" text-anchor="middle" font-size="11.5" fill="#94a3b8">{t}</text>')
-    if i == 3:  # live badge
-        b.append(f'<rect x="{cx-27}" y="30" width="54" height="18" rx="9" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".6"/>')
-        b.append(f'<circle class="lv" cx="{cx-14}" cy="39" r="3" fill="#34d399"/>')
-        b.append(f'<text class="m" x="{cx+4}" y="42.5" text-anchor="middle" font-size="9.5" letter-spacing="1.5" fill="#34d399">NOW</text>')
-    b.append('</g>')
+def build(i):
+    tag, title, detail, big, lab, c, done = ITEMS[i]
+    n = len(ITEMS)
+    t0 = 0.5 + i * STEP                    # tick time for this item
+    up_start = t0 - STEP + 0.7             # upper connector draws (end = t0 - 0.05)
+    low_start = t0 + 0.35                  # lower connector draws (end = t0 + 0.7)
+    prev_c = ITEMS[i-1][5] if i else c
+    next_c = ITEMS[i+1][5] if i < n-1 else c
+    up_mid, low_mid = mix(prev_c, c), mix(c, next_c)
 
-svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
-       f'<defs>{"".join(defs)}</defs><style>{css}</style>{"".join(b)}</svg>\n')
-OUT.write_text(svg, encoding="utf-8")
-print(f"wrote {OUT} ({len(svg)} bytes)")
+    css = ("text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}"
+           ".m{font-family:'Fira Code','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace}")
+    def kf(name, s, e, a, b):             # a/b = value before/after; resets near loop end
+        return (f"@keyframes {name}{{0%,{pct(s)}%{{{a}}}{pct(e)}%,92%{{{b}}}96%,100%{{{a}}}}}")
+    kfs = []
+    if done:
+        kfs += [kf("tk", t0, t0+.45, "stroke-dashoffset:100", "stroke-dashoffset:0"),
+                kf("nf", t0, t0+.3, "opacity:0", "opacity:1"),
+                kf("gl", t0, t0+.5, "opacity:0", "opacity:1"),
+                kf("lw", low_start, low_start+.35, "stroke-dashoffset:100", "stroke-dashoffset:0")]
+        css += ".tk{animation:tk %ss linear infinite}.nf,.gl{animation:nf %ss linear infinite}" % (T, T)
+        css = css.replace(".nf,.gl{animation:nf", ".nf{animation:nf") + ".gl{animation:gl %ss linear infinite}.lw{animation:lw %ss linear infinite}" % (T, T)
+    else:
+        kfs.append("@keyframes pn{0%,100%{opacity:.35}50%{opacity:1}}")
+        css += ".pn{animation:pn 1.8s ease-in-out infinite}"
+    if i:
+        kfs.append(kf("uw", up_start, t0-.05, "stroke-dashoffset:100", "stroke-dashoffset:0"))
+        css += ".uw{animation:uw %ss linear infinite}" % T
+    if done:
+        css += "".join([])
+    css += "".join(kfs)
+
+    defs = (f'<linearGradient id="gu" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="{NY-18}"><stop offset="0" stop-color="{up_mid}"/><stop offset="1" stop-color="{c}"/></linearGradient>'
+            f'<linearGradient id="gd" gradientUnits="userSpaceOnUse" x1="0" y1="{NY+18}" x2="0" y2="{H}"><stop offset="0" stop-color="{c}"/><stop offset="1" stop-color="{low_mid}"/></linearGradient>'
+            f'<linearGradient id="cf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{c}" stop-opacity=".12"/><stop offset=".6" stop-color="#0d1117"/><stop offset="1" stop-color="#0d1117"/></linearGradient>')
+    b = []
+    # rails (dim base + animated progress)
+    if i:
+        b.append(f'<line x1="{NX}" y1="0" x2="{NX}" y2="{NY-18}" stroke="#30363d" stroke-width="3"/>')
+        b.append(f'<line class="uw" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0" x1="{NX}" y1="0" x2="{NX}" y2="{NY-18}" stroke="url(#gu)" stroke-width="3"/>')
+    if i < n-1:
+        b.append(f'<line x1="{NX}" y1="{NY+18}" x2="{NX}" y2="{H}" stroke="#30363d" stroke-width="3"/>')
+        b.append(f'<line class="lw" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0" x1="{NX}" y1="{NY+18}" x2="{NX}" y2="{H}" stroke="url(#gd)" stroke-width="3"/>')
+    # connector to card
+    b.append(f'<line x1="{NX+18}" y1="{NY}" x2="{CX0}" y2="{NY}" stroke="{c}" stroke-opacity=".35" stroke-dasharray="3 4"/>')
+    # card
+    dash = '' if done else ' stroke-dasharray="6 5"'
+    b.append(f'<rect x="{CX0}" y="{CY0}" width="{CX1-CX0}" height="{CY1-CY0}" rx="16" fill="url(#cf)" stroke="{c}" stroke-opacity="{.28 if done else .5}"{dash}/>')
+    if done:
+        b.append(f'<rect class="gl" x="{CX0}" y="{CY0}" width="{CX1-CX0}" height="{CY1-CY0}" rx="16" fill="none" stroke="{c}" stroke-opacity=".85" stroke-width="1.5"/>')
+        b.append(f'<rect class="gl" x="{CX0}" y="{CY0+22}" width="4" height="{CY1-CY0-44}" rx="2" fill="{c}"/>')
+    # node
+    b.append(f'<circle cx="{NX}" cy="{NY}" r="18" fill="#0d1117" stroke="{c}" stroke-opacity="{.45 if done else .8}" stroke-width="2.5"{"" if done else " stroke-dasharray=\"4 4\""}/>')
+    if done:
+        b.append(f'<circle class="nf" cx="{NX}" cy="{NY}" r="18" fill="{c}"/>')
+        b.append(f'<path class="tk" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0" d="M{NX-8} {NY+1} L{NX-2} {NY+7.5} L{NX+9} {NY-6.5}" fill="none" stroke="#0d1117" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>')
+    else:
+        b.append(f'<circle class="pn" cx="{NX}" cy="{NY}" r="5" fill="{c}"/>')
+    # text
+    b.append(f'<text class="m" x="{CX0+28}" y="{CY0+32}" font-size="12" letter-spacing="2" fill="{c}">{tag}</text>')
+    b.append(f'<text x="{CX0+28}" y="{CY0+62}" font-size="24" font-weight="800" fill="#f1f5f9">{title}</text>')
+    b.append(f'<text x="{CX0+28}" y="{CY0+86}" font-size="13.5" fill="#94a3b8">{detail}</text>')
+    # metric + done chip
+    b.append(f'<text class="m" x="{CX1-28}" y="{CY0+58}" text-anchor="end" font-size="34" font-weight="700" fill="{c}">{big}</text>')
+    b.append(f'<text class="m" x="{CX1-28}" y="{CY0+80}" text-anchor="end" font-size="10.5" letter-spacing="2" fill="#94a3b8">{lab}</text>')
+    if done:
+        b.append(f'<text class="m gl" x="{CX1-28}" y="{CY0+24}" text-anchor="end" font-size="10.5" letter-spacing="2" fill="{c}">✓ DONE</text>' if i < 4 else
+                 f'<text class="m gl" x="{CX1-28}" y="{CY0+24}" text-anchor="end" font-size="10.5" letter-spacing="2" fill="{c}">● LIVE</text>')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
+            f'<defs>{defs}</defs><style>{css}</style>{"".join(b)}</svg>\n')
+
+for old in D.glob("journey*.svg"):
+    old.unlink()
+for i in range(len(ITEMS)):
+    p = D / f"journey-{i+1}.svg"
+    p.write_text(build(i), encoding="utf-8")
+    print("wrote", p.name)

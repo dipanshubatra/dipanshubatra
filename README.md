@@ -66,7 +66,20 @@
 
 <img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
 
-<img src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/166ccb5/assets/ui/wins-emoji.gif" width="100%" alt="Animated floating gold trophy achievements"/>
+<table>
+  <tr>
+    <td align="center" width="25%"><img src="assets/achievements/techfrontier-2025.svg" width="190" alt="TechFrontier 2025 winner — IIIT Delhi"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/hackastra.svg" width="190" alt="Hackastra winner — NIT Durgapur"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/mukand-utsav-2k26.svg" width="190" alt="Mukand Utsav 2K26 winner"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/hackorbit-2k26.svg" width="190" alt="HackOrbit 2K26 winner"/></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><img src="assets/achievements/ideathon-2k26.svg" width="190" alt="Ideathon 2K26 winner — JMIT Radaur"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/shark-tank.svg" width="190" alt="Shark Tank pitch competition winner"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/byteverse.svg" width="190" alt="ByteVerse hackathon finalist"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/ecsoc-2026.svg" width="190" alt="ECSOC 2026 global rank 4 — Tier 1"/></td>
+  </tr>
+</table>
 
 <br/>
 

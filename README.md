@@ -102,9 +102,9 @@
 
 <div align="center">
 
-<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-medtrack.svg" width="32%" alt="MedTrack"/></a>
-<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-mailgenie.svg" width="32%" alt="MailGenie"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-ecsoc.svg" width="32%" alt="16+ open-source projects"/></a>
+<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-note-1.svg" width="100%" alt="MedTrack, 94 commits"/></a>
+<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-note-2.svg" width="100%" alt="MailGenie, 24 commits"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-note-3.svg" width="100%" alt="16+ open-source projects in the Java and Spring ecosystem"/></a>
 
 </div>
 

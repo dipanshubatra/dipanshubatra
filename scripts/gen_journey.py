@@ -21,8 +21,9 @@ ITEMS = [
 
 def pct(s): return round(s / T * 100, 2)
 
-def build(i):
-    tag, title, cap, big, lab, c, done = ITEMS[i]
+def build(i, items=None):
+    items = items or ITEMS
+    tag, title, cap, big, lab, c, done = items[i]
     t0 = 0.5 + i * STEP
     tilt = -0.5 if i % 2 == 0 else 0.5
     stk_rot = 3 if i % 2 == 0 else -3
@@ -90,8 +91,9 @@ def build(i):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
             f'<defs>{defs}</defs><style>{css}</style>{"".join(b)}</svg>\n')
 
-for old in list(D.glob("journey*.svg")) + list(D.glob("note-*.svg")):
-    old.unlink()
-for i in range(len(ITEMS)):
-    (D / f"note-{i+1}.svg").write_text(build(i), encoding="utf-8")
-    print("wrote", f"note-{i+1}.svg")
+if __name__ == "__main__":
+    for old in list(D.glob("journey*.svg")) + list(D.glob("note-*.svg")):
+        old.unlink()
+    for i in range(len(ITEMS)):
+        (D / f"note-{i+1}.svg").write_text(build(i), encoding="utf-8")
+        print("wrote", f"note-{i+1}.svg")

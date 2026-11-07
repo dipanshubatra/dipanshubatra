@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="230" viewBox="0 0 240 230">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#182a3d"/><stop offset="1" stop-color="#0a111d"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7f1fa"/><stop offset=".48" stop-color="#b9d1e5"/><stop offset="1" stop-color="#718da6"/></linearGradient>
+ <radialGradient id="aura"><stop stop-color="#b9d1e5" stop-opacity=".3"/><stop offset="1" stop-color="#b9d1e5" stop-opacity="0"/></radialGradient>
+ <linearGradient id="shine"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <clipPath id="clip"><rect x="4" y="4" width="232" height="222" rx="19"/></clipPath>
+</defs>
+<style>
+ text{font-family:Arial,Helvetica,sans-serif}
+ .float{transform-box:fill-box;transform-origin:center;animation:float 3.6s ease-in-out infinite;animation-delay:-0.00s}
+ .spin{transform-box:fill-box;transform-origin:center;transform-style:preserve-3d;animation:spin 5.8s linear infinite;animation-delay:-0.00s}
+ .aura{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite}
+ .shine{animation:sweep 4.8s ease-in-out infinite;animation-delay:-0.44s}
+ .spark1{animation:twinkle 2.4s ease-in-out infinite}
+ .spark2{animation:twinkle 3.1s ease-in-out .8s infinite}
+ .glint{transform-box:fill-box;transform-origin:center;animation:sparkle 2.1s ease-in-out infinite;animation-delay:-0.00s}
+ .glint2{transform-box:fill-box;transform-origin:center;animation:sparkle 2.7s ease-in-out .65s infinite}
+ .edge{animation:edge 3.2s ease-in-out infinite}
+ @keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}
+ @keyframes spin{0%{transform:perspective(520px) rotateY(0deg)}50%{transform:perspective(520px) rotateY(180deg)}100%{transform:perspective(520px) rotateY(360deg)}}
+ @keyframes sparkle{0%,100%{opacity:.18;transform:scale(.55) rotate(0deg)}50%{opacity:1;transform:scale(1.35) rotate(45deg)}}
+ @keyframes pulse{0%,100%{opacity:.45;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+ @keyframes sweep{0%{transform:translateX(-310px) skewX(-18deg)}65%,100%{transform:translateX(330px) skewX(-18deg)}}
+ @keyframes twinkle{0%,100%{opacity:.15}50%{opacity:1}}
+ @keyframes edge{0%,100%{stroke-opacity:.35}50%{stroke-opacity:.9}}
+ @media (prefers-reduced-motion:reduce){.float,.spin,.aura,.shine,.spark1,.spark2,.glint,.glint2,.edge{animation:none}}
+</style>
+<rect x="4" y="4" width="232" height="222" rx="19" fill="url(#bg)" stroke="#b9d1e5" stroke-opacity=".38" class="edge"/>
+<rect x="5" y="5" width="230" height="220" rx="18" fill="url(#aura)" class="aura"/>
+<g clip-path="url(#clip)">
+ <circle cx="29" cy="34" r="1.5" fill="#fff" class="spark1"/><circle cx="205" cy="48" r="1.4" fill="#fff" class="spark2"/>
+ <circle cx="26" cy="174" r="1.2" fill="#fff" class="spark2"/><circle cx="215" cy="185" r="1.5" fill="#fff" class="spark1"/>
+ <path d="M-60 0 L-15 0 L-95 230 L-140 230Z" fill="url(#shine)" class="shine"/>
+</g>
+<g class="float"><g class="spin">
+ <circle cx="120" cy="83" r="47" fill="#b9d1e5" opacity=".08"/>
+ <circle cx="120" cy="83" r="39" fill="none" stroke="#b9d1e5" stroke-opacity=".25"/>
+ <!-- trophy handles -->
+ <path d="M89 55 C62 49 66 91 98 94 M151 55 C178 49 174 91 142 94" fill="none" stroke="url(#metal)" stroke-width="8" stroke-linecap="round"/>
+ <path d="M90 52 Q90 48 97 48 H143 Q150 48 150 55 L146 83 Q141 105 120 111 Q99 105 94 83Z" fill="url(#metal)" stroke="#e7f1fa" stroke-width="1.5"/>
+ <path d="M103 57 Q108 54 112 57 L108 91 Q106 96 102 91Z" fill="#fff" opacity=".55"/>
+ <path d="M128 56 L140 55 L135 91 Q133 96 129 94Z" fill="#fff" opacity=".24"/>
+ <path d="M116 110 H124 V125 H116Z" fill="url(#metal)"/>
+ <path d="M103 124 Q120 119 137 124 L141 132 H99Z" fill="url(#metal)"/>
+ <rect x="92" y="133" width="56" height="8" rx="3" fill="#718da6"/>
+ <rect x="98" y="134" width="44" height="3" rx="1.5" fill="#e7f1fa" opacity=".8"/>
+</g></g>
+<g fill="#ffffff">
+ <path class="glint" d="M70 45 L73 53 L81 56 L73 59 L70 67 L67 59 L59 56 L67 53Z"/>
+ <path class="glint2" d="M171 70 L173 75 L178 77 L173 79 L171 84 L169 79 L164 77 L169 75Z"/>
+ <path class="glint2" d="M77 108 L79 113 L84 115 L79 117 L77 122 L75 117 L70 115 L75 113Z"/>
+ <circle class="glint" cx="164" cy="111" r="2.2"/>
+</g>
+<rect x="17" y="151" width="206" height="1" fill="#b9d1e5" opacity=".3"/>
+<rect x="17" y="164" width="6" height="6" rx="3" fill="#b9d1e5"/>
+<text x="31" y="170" font-size="10" font-weight="700" letter-spacing="1.3" fill="#b9d1e5">FINALIST</text>
+<text x="120" y="195" font-size="16" font-weight="700" text-anchor="middle" fill="#f3f7fc">ByteVerse</text>
+<text x="120" y="212" font-size="12" font-weight="500" text-anchor="middle" fill="#c0cede">Hackathon finalist</text>
+</svg>

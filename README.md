@@ -68,16 +68,16 @@
 
 <table width="100%" border="0" cellspacing="8" cellpadding="0">
   <tr>
-    <td align="center" width="25%"><img src="assets/achievements/techfrontier-2025.svg" width="100%" alt="TECHFRONTIER 2025 — IIIT Delhi · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/hackastra.svg" width="100%" alt="HACKASTRA — NIT Durgapur · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/mukand-utsav-2k26.svg" width="100%" alt="MUKAND UTSAV 2026 — National Level · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/hackorbit-2k26.svg" width="100%" alt="HACKORBIT 2026 — National Level · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/techfrontier-2025.gif" width="100%" alt="TECHFRONTIER 2025 — IIIT Delhi · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/hackastra.gif" width="100%" alt="HACKASTRA — NIT Durgapur · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/mukand-utsav-2k26.gif" width="100%" alt="MUKAND UTSAV 2026 — National Level · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/hackorbit-2k26.gif" width="100%" alt="HACKORBIT 2026 — National Level · WINNER"/></td>
   </tr>
   <tr>
-    <td align="center" width="25%"><img src="assets/achievements/ideathon-2k26.svg" width="100%" alt="IDEATHON 2026 — JMIT Radaur · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/shark-tank.svg" width="100%" alt="SHARK TANK — Pitch Competition · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/byteverse.svg" width="100%" alt="BYTEVERSE — Hackathon · FINALIST"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/ecsoc-2026.svg" width="100%" alt="ECSOC 2026 — Global Rank 4 · TIER 1"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/ideathon-2k26.gif" width="100%" alt="IDEATHON 2026 — JMIT Radaur · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/shark-tank.gif" width="100%" alt="SHARK TANK — Pitch Competition · WINNER"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/byteverse.gif" width="100%" alt="BYTEVERSE — Hackathon · FINALIST"/></td>
+    <td align="center" width="25%"><img src="assets/achievements/ecsoc-2026.gif" width="100%" alt="ECSOC 2026 — Global Rank 4 · TIER 1"/></td>
   </tr>
 </table>
 

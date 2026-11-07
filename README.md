@@ -12,9 +12,10 @@
 
 </div>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-about.svg" width="100%" alt="About Me"/>
+<br/>
 
 <img src="assets/ui/terminal.svg" width="100%" alt="whoami"/>
 
@@ -26,9 +27,10 @@
 
 > **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-ecsoc.svg" width="100%" alt="ECSoC '26"/>
+<br/>
 
 <div align="center">
 
@@ -43,9 +45,10 @@
 
 </div>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-projects.svg" width="100%" alt="Featured Projects"/>
+<br/>
 
 <div align="center">
 
@@ -56,34 +59,36 @@
 
 </div>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-stack.svg" width="100%" alt="Tech Stack"/>
+<br/>
 
 <img src="assets/ui/marquee.svg" width="100%" alt="Tech stack: Java, Spring Boot, Spring Security, PostgreSQL, MySQL, Redis, Docker, JMeter and more"/>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
-
-<table width="100%" border="0" cellspacing="8" cellpadding="0">
-  <tr>
-    <td align="center" width="25%"><img src="assets/achievements/techfrontier-2025.svg" width="100%" alt="TECHFRONTIER 2025 — IIIT Delhi · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/hackastra.svg" width="100%" alt="HACKASTRA — NIT Durgapur · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/mukand-utsav-2k26.svg" width="100%" alt="MUKAND UTSAV 2026 — National Level · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/hackorbit-2k26.svg" width="100%" alt="HACKORBIT 2026 — National Level · WINNER"/></td>
-  </tr>
-  <tr>
-    <td align="center" width="25%"><img src="assets/achievements/ideathon-2k26.svg" width="100%" alt="IDEATHON 2026 — JMIT Radaur · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/shark-tank.svg" width="100%" alt="SHARK TANK — Pitch Competition · WINNER"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/byteverse.svg" width="100%" alt="BYTEVERSE — Hackathon · FINALIST"/></td>
-    <td align="center" width="25%"><img src="assets/achievements/ecsoc-2026.svg" width="100%" alt="ECSOC 2026 — Global Rank 4 · TIER 1"/></td>
-  </tr>
-</table>
-
 <br/>
 
+<div align="center">
+
+<img src="assets/achievements/techfrontier-2025.svg" width="24%" alt="TECHFRONTIER 2025 — IIIT Delhi · WINNER"/>
+<img src="assets/achievements/hackastra.svg" width="24%" alt="HACKASTRA — NIT Durgapur · WINNER"/>
+<img src="assets/achievements/mukand-utsav-2k26.svg" width="24%" alt="MUKAND UTSAV 2026 — National Level · WINNER"/>
+<img src="assets/achievements/hackorbit-2k26.svg" width="24%" alt="HACKORBIT 2026 — National Level · WINNER"/>
+
+<img src="assets/achievements/ideathon-2k26.svg" width="24%" alt="IDEATHON 2026 — JMIT Radaur · WINNER"/>
+<img src="assets/achievements/shark-tank.svg" width="24%" alt="SHARK TANK — Pitch Competition · WINNER"/>
+<img src="assets/achievements/byteverse.svg" width="24%" alt="BYTEVERSE — Hackathon · FINALIST"/>
+<img src="assets/achievements/ecsoc-2026.svg" width="24%" alt="ECSOC 2026 — Global Rank 4 · TIER 1"/>
+
+</div>
+
+<br/><br/>
+
 <img src="assets/ui/t-journey.svg" width="100%" alt="Journey"/>
+<br/>
 
 <div align="center">
 
@@ -96,9 +101,10 @@
 
 </div>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-oss.svg" width="100%" alt="Open Source"/>
+<br/>
 
 <div align="center">
 
@@ -108,9 +114,10 @@
 
 </div>
 
-<br/>
+<br/><br/>
 
 <img src="assets/ui/t-stats.svg" width="100%" alt="GitHub Analytics"/>
+<br/>
 
 <div align="center">
 

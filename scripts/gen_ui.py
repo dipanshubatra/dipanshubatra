@@ -338,7 +338,7 @@ project("cronvault.svg", "FEATURED PROJECT  /  02", "CronVault", "Multi-tenant d
         ["Exactly-once execution via DB pessimistic locking", "Custom RBAC across tenants, with full audit log",
          "Lua sliding-window rate limiter, fails open to DB", "Per-tenant circuit breakers using Resilience4j"],
         ["Java 21", "Spring Boot 3", "Spring Security", "MySQL", "Redis + Lua", "Resilience4j"], "#f472b6", "#f5b942")
-journey(); wins()
+wins()  # journey.svg now built by scripts/gen_journey.py
 for k, n, t in [("about", "01", "About Me"), ("ecsoc", "02", "ECSoC '26"), ("projects", "03", "Featured Projects"), ("stack", "04", "Tech Stack"),
                 ("wins", "05", "Achievements"), ("journey", "06", "Journey"), ("oss", "07", "Open Source"), ("stats", "08", "GitHub Analytics")]:
     title(k, n, t)

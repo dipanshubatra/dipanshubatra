@@ -90,8 +90,8 @@ def build(i):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
             f'<defs>{defs}</defs><style>{css}</style>{"".join(b)}</svg>\n')
 
-for old in D.glob("journey*.svg"):
+for old in list(D.glob("journey*.svg")) + list(D.glob("note-*.svg")):
     old.unlink()
 for i in range(len(ITEMS)):
-    (D / f"journey-{i+1}.svg").write_text(build(i), encoding="utf-8")
-    print("wrote", f"journey-{i+1}.svg")
+    (D / f"note-{i+1}.svg").write_text(build(i), encoding="utf-8")
+    print("wrote", f"note-{i+1}.svg")

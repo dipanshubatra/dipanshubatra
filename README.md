@@ -87,12 +87,12 @@
 
 <div align="center">
 
-<img src="assets/ui/journey-1.svg" width="100%" alt="B.Tech CSE at JMIT Radaur, 2025–2029, CGPA 7.9"/>
-<img src="assets/ui/journey-2.svg" width="100%" alt="Hackathon streak, 7 national-level wins"/>
-<img src="assets/ui/journey-3.svg" width="100%" alt="Open source contributions: MedTrack, MailGenie and 5 other repos"/>
-<img src="assets/ui/journey-4.svg" width="100%" alt="ECSoC ’26 Global Rank 4, Tier 1 Developer"/>
-<img src="assets/ui/journey-5.svg" width="100%" alt="Backend Intern at Enginow, Java 17 and Spring Boot 3, current"/>
-<img src="assets/ui/journey-6.svg" width="100%" alt="Next: open to Backend and SDE internships"/>
+<img src="assets/ui/note-1.svg" width="100%" alt="B.Tech CSE at JMIT Radaur, 2025–2029, CGPA 7.9"/>
+<img src="assets/ui/note-2.svg" width="100%" alt="Hackathon streak, 7 national-level wins"/>
+<img src="assets/ui/note-3.svg" width="100%" alt="Open source contributions: MedTrack, MailGenie and 5 other repos"/>
+<img src="assets/ui/note-4.svg" width="100%" alt="ECSoC ’26 Global Rank 4, Tier 1 Developer"/>
+<img src="assets/ui/note-5.svg" width="100%" alt="Backend Intern at Enginow, Java 17 and Spring Boot 3, current"/>
+<img src="assets/ui/note-6.svg" width="100%" alt="Next: open to Backend and SDE internships"/>
 
 </div>
 

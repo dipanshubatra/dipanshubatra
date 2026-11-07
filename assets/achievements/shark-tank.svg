@@ -8,18 +8,23 @@
 </defs>
 <style>
  text{font-family:Arial,Helvetica,sans-serif}
- .float{transform-box:fill-box;transform-origin:center;animation:float 3.6s ease-in-out infinite;animation-delay:-0.22s}
+ .float{transform-box:fill-box;transform-origin:center;animation:float 3.6s ease-in-out infinite;animation-delay:-2.22s}
+ .spin{transform-box:fill-box;transform-origin:center;transform-style:preserve-3d;animation:spin 5.8s linear infinite;animation-delay:-2.22s}
  .aura{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite}
  .shine{animation:sweep 4.8s ease-in-out infinite;animation-delay:-0.22s}
  .spark1{animation:twinkle 2.4s ease-in-out infinite}
  .spark2{animation:twinkle 3.1s ease-in-out .8s infinite}
+ .glint{transform-box:fill-box;transform-origin:center;animation:sparkle 2.1s ease-in-out infinite;animation-delay:-2.22s}
+ .glint2{transform-box:fill-box;transform-origin:center;animation:sparkle 2.7s ease-in-out .65s infinite}
  .edge{animation:edge 3.2s ease-in-out infinite}
  @keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}
+ @keyframes spin{0%{transform:perspective(520px) rotateY(0deg)}50%{transform:perspective(520px) rotateY(180deg)}100%{transform:perspective(520px) rotateY(360deg)}}
+ @keyframes sparkle{0%,100%{opacity:.18;transform:scale(.55) rotate(0deg)}50%{opacity:1;transform:scale(1.35) rotate(45deg)}}
  @keyframes pulse{0%,100%{opacity:.45;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
  @keyframes sweep{0%{transform:translateX(-310px) skewX(-18deg)}65%,100%{transform:translateX(330px) skewX(-18deg)}}
  @keyframes twinkle{0%,100%{opacity:.15}50%{opacity:1}}
  @keyframes edge{0%,100%{stroke-opacity:.35}50%{stroke-opacity:.9}}
- @media (prefers-reduced-motion:reduce){.float,.aura,.shine,.spark1,.spark2,.edge{animation:none}}
+ @media (prefers-reduced-motion:reduce){.float,.spin,.aura,.shine,.spark1,.spark2,.glint,.glint2,.edge{animation:none}}
 </style>
 <rect x="4" y="4" width="232" height="222" rx="19" fill="url(#bg)" stroke="#ffc45e" stroke-opacity=".38" class="edge"/>
 <rect x="5" y="5" width="230" height="220" rx="18" fill="url(#aura)" class="aura"/>
@@ -28,7 +33,7 @@
  <circle cx="26" cy="174" r="1.2" fill="#fff" class="spark2"/><circle cx="215" cy="185" r="1.5" fill="#fff" class="spark1"/>
  <path d="M-60 0 L-15 0 L-95 230 L-140 230Z" fill="url(#shine)" class="shine"/>
 </g>
-<g class="float">
+<g class="float"><g class="spin">
  <circle cx="120" cy="83" r="47" fill="#ffc45e" opacity=".08"/>
  <circle cx="120" cy="83" r="39" fill="none" stroke="#ffc45e" stroke-opacity=".25"/>
  <!-- trophy handles -->
@@ -40,10 +45,16 @@
  <path d="M103 124 Q120 119 137 124 L141 132 H99Z" fill="url(#metal)"/>
  <rect x="92" y="133" width="56" height="8" rx="3" fill="#a96a24"/>
  <rect x="98" y="134" width="44" height="3" rx="1.5" fill="#ffdf9a" opacity=".8"/>
+</g></g>
+<g fill="#ffffff">
+ <path class="glint" d="M70 45 L73 53 L81 56 L73 59 L70 67 L67 59 L59 56 L67 53Z"/>
+ <path class="glint2" d="M171 70 L173 75 L178 77 L173 79 L171 84 L169 79 L164 77 L169 75Z"/>
+ <path class="glint2" d="M77 108 L79 113 L84 115 L79 117 L77 122 L75 117 L70 115 L75 113Z"/>
+ <circle class="glint" cx="164" cy="111" r="2.2"/>
 </g>
 <rect x="17" y="151" width="206" height="1" fill="#ffc45e" opacity=".3"/>
 <rect x="17" y="164" width="6" height="6" rx="3" fill="#ffc45e"/>
 <text x="31" y="170" font-size="10" font-weight="700" letter-spacing="1.3" fill="#ffc45e">WINNER</text>
-<text x="120" y="195" font-size="15" font-weight="700" text-anchor="middle" fill="#f3f7fc">Shark Tank</text>
-<text x="120" y="212" font-size="10.5" text-anchor="middle" fill="#a8bacd">Pitch competition</text>
+<text x="120" y="195" font-size="16" font-weight="700" text-anchor="middle" fill="#f3f7fc">Shark Tank</text>
+<text x="120" y="212" font-size="12" font-weight="500" text-anchor="middle" fill="#c0cede">Pitch competition</text>
 </svg>

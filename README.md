@@ -64,7 +64,7 @@
 
 <br/>
 
-<img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
+<img src="assets/ui/t-wins.gif" width="100%" alt="Achievements"/>
 
 <table width="100%" border="0" cellspacing="8" cellpadding="0">
   <tr>

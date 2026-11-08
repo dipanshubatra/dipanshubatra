@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/ui/hero.svg" width="100%" alt="Dipanshu Batra · Backend Engineer"/>
+<img src="assets/ui/hero-note.svg" width="100%" alt="Dipanshu Batra · Backend Engineer · Java &amp; Spring Boot · Distributed Systems"/>
 
 <br/>
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
-<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ui/btn-leetcode.svg" height="44" alt="LeetCode"/></a>
-<a href="https://x.com/dipanshubatra_"><img src="assets/ui/btn-x.svg" height="44" alt="X"/></a>
-<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-note-linkedin.svg" height="50" alt="LinkedIn"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-note-github.svg" height="50" alt="GitHub"/></a>
+<a href="https://leetcode.com/u/dipanshubatra"><img src="assets/ui/btn-note-leetcode.svg" height="50" alt="LeetCode"/></a>
+<a href="https://x.com/dipanshubatra_"><img src="assets/ui/btn-note-x.svg" height="50" alt="X"/></a>
+<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-note-portfolio.svg" height="50" alt="Portfolio"/></a>
 
 </div>
 
@@ -138,13 +138,13 @@
 
 <div align="center">
 
-### Open to SDE & backend internships. Let's build something reliable together.
+<img src="assets/ui/cta-note.svg" width="100%" alt="Open to SDE and backend internships. Let's build something reliable together."/>
 
-<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-linkedin.svg" height="44" alt="LinkedIn"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-github.svg" height="44" alt="GitHub"/></a>
-<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-portfolio.svg" height="44" alt="Portfolio"/></a>
+<a href="https://linkedin.com/in/dipanshubatra"><img src="assets/ui/btn-note-linkedin.svg" height="50" alt="LinkedIn"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/btn-note-github.svg" height="50" alt="GitHub"/></a>
+<a href="https://dipanshu-batra.vercel.app/"><img src="assets/ui/btn-note-portfolio.svg" height="50" alt="Portfolio"/></a>
 
-<img src="assets/footer.svg" width="100%" alt=""/>
+<img src="assets/ui/footer-note.svg" width="100%" alt="Thanks for reading. Now go build something. Dipanshu"/>
 
 </div>
 

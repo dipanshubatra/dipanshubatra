@@ -47,13 +47,13 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-projects.svg" width="100%" alt="Featured Projects"/>
+<img src="assets/ui/hd-projects.svg" width="100%" alt="Featured Projects"/>
 <br/>
 
 <div align="center">
 
-<a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/novamart.svg" width="49%" alt="NovaMart"/></a>
-<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/cronvault.svg" width="49%" alt="CronVault"/></a>
+<a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/proj-novamart.svg" width="49%" alt="NovaMart receipt: 0% error rate, 182ms average latency, 326ms P95, 5,250+ concurrent requests"/></a>
+<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/proj-cronvault.svg" width="49%" alt="CronVault receipt: exactly-once runs, 9 RBAC permissions, 60s crash recovery"/></a>
 
 **NovaMart:** [Source](https://github.com/dipanshubatra/nova-mart-ecommerce) · [Live demo](https://martnova.vercel.app/) &nbsp;|&nbsp; **CronVault:** [Live demo](https://cron-vaul-frontend-nine.vercel.app) (source is private)
 

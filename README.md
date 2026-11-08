@@ -14,18 +14,18 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-about.svg" width="100%" alt="About Me"/>
+<img src="assets/ui/hd-about.svg" width="100%" alt="About Me"/>
 <br/>
 
-<img src="assets/ui/terminal.svg" width="100%" alt="whoami"/>
-
-<br/>
-
-<img src="assets/ui/metrics-countup.gif" width="100%" alt="Animated achievement counters"/>
+<img src="assets/ui/terminal-note.svg" width="100%" alt="Terminal: whoami, cat now.txt, ls achievements, echo STATUS"/>
 
 <br/>
 
-> **B.Tech CSE** student at **JMIT Radaur** (CGPA 7.9) and **Backend Developer Intern at Enginow**. I build **secure, scalable Java / Spring Boot systems** and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done.
+<img src="assets/ui/highlights-note.svg" width="100%" alt="Selected highlights: 7 hackathon wins, ECSoC 26 global rank 4, 16K+ LinkedIn followers, 16+ open-source projects"/>
+
+<br/>
+
+<img src="assets/ui/about-note.svg" width="100%" alt="B.Tech CSE student at JMIT Radaur (CGPA 7.9) and Backend Developer Intern at Enginow. I build secure, scalable Java / Spring Boot systems and care about the hard parts: exactly-once execution, concurrency, auth, caching and payments, all load-tested before I call them done."/>
 
 <br/><br/>
 

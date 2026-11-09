@@ -25,6 +25,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/gen_stats.py
 
+      - name: Regenerate analytics pieces
+        run: python3 scripts/gen_analytics.py
+
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

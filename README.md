@@ -65,10 +65,10 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-stack.svg" width="100%" alt="Tech Stack"/>
+<img src="assets/ui/hd-stack.svg" width="100%" alt="Tech Stack"/>
 <br/>
 
-<img src="assets/ui/marquee.svg" width="100%" alt="Tech stack: Java, Spring Boot, Spring Security, PostgreSQL, MySQL, Redis, Docker, JMeter and more"/>
+<img src="assets/ui/stack-note.svg" width="100%" alt="Tech stack sticker wall. Core: Java 17/21, Spring Boot 3, Spring Security, Hibernate/JPA, REST APIs. Security: JWT rotation, OAuth2, RBAC, Bucket4j rate limiting. Systems: Distributed Systems, Circuit Breakers, Async Processing, Resilience4j, HikariCP. Data: PostgreSQL, MySQL, Redis distributed locks. Tools: Docker, GitHub Actions, Maven, JUnit 5, JMeter, Postman, Cashfree, Cloudinary, React."/>
 
 <br/><br/>
 

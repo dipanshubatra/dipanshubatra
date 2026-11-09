@@ -99,7 +99,7 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-stats.svg" width="100%" alt="GitHub Analytics"/>
+<img src="assets/ui/hd-stats.svg" width="100%" alt="GitHub Analytics"/>
 <br/>
 
 <div align="center">
@@ -110,10 +110,7 @@
   <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
 
-<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
-
-<img src="assets/ext/streak-stats-demolab-com-ac0806.svg" width="49%" alt="GitHub streak"/>
-<img src="assets/ext/leetcard-jacoblin-cool-dipanshubatra-65dc3e.svg" width="49%" alt="LeetCode stats"/>
+<img src="assets/ui/analytics-sheet.svg" width="100%" alt="GitHub analytics sheet: 1,782 commits, 754 pull requests, 39 public repos, 4,757 contributions since April 2025. Languages: Java 33%, Python 33%, CSS 11%, HTML 11%, JavaScript 11%. Longest streak 98 days, current streak 4 days. LeetCode 351 solved: 140 easy, 184 medium, 27 hard, contest rating 1381. 5 stars, 10 followers."/>
 
 </div>
 

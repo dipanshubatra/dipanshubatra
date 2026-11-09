@@ -61,22 +61,10 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-wins.svg" width="100%" alt="Achievements"/>
+<img src="assets/ui/hd-wins.svg" width="100%" alt="Achievements"/>
 <br/>
 
-<div align="center">
-
-<img src="assets/achievements/techfrontier-2025.svg" width="24%" alt="TECHFRONTIER 2025 — IIIT Delhi · WINNER"/>
-<img src="assets/achievements/hackastra.svg" width="24%" alt="HACKASTRA — NIT Durgapur · WINNER"/>
-<img src="assets/achievements/mukand-utsav-2k26.svg" width="24%" alt="MUKAND UTSAV 2026 — National Level · WINNER"/>
-<img src="assets/achievements/hackorbit-2k26.svg" width="24%" alt="HACKORBIT 2026 — National Level · WINNER"/>
-
-<img src="assets/achievements/ideathon-2k26.svg" width="24%" alt="IDEATHON 2026 — JMIT Radaur · WINNER"/>
-<img src="assets/achievements/shark-tank.svg" width="24%" alt="SHARK TANK — Pitch Competition · WINNER"/>
-<img src="assets/achievements/byteverse.svg" width="24%" alt="BYTEVERSE — Hackathon · FINALIST"/>
-<img src="assets/achievements/ecsoc-2026.svg" width="24%" alt="ECSOC 2026 — Global Rank 4 · TIER 1"/>
-
-</div>
+<img src="assets/ui/wins-shelf.svg" width="100%" alt="Trophy shelf. Winner: TechFrontier 2025 (IIIT Delhi, 500+ teams), Hackastra (NIT Durgapur), Mukand Utsav 2K26 (national-level), HackOrbit 2K26 (national-level), Ideathon 2K26 (JMIT Radaur), Shark Tank (pitch competition). Finalist: ByteVerse hackathon. ECSoC 2026: Global Rank 4, Tier 1."/>
 
 <br/><br/>
 

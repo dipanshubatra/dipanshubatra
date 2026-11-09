@@ -104,13 +104,17 @@
 
 <div align="center">
 
+<img src="assets/ui/an-nums.svg" width="100%" alt="Big numbers: total commits, pull requests, public repos and contributions"/>
+<img src="assets/ui/an-lang.svg" width="100%" alt="Top languages by public repo: Java, Python, CSS, HTML, JavaScript"/>
+<img src="assets/ui/an-streak.svg" width="100%" alt="Longest contribution streak, shown as a grid of days, with the current streak"/>
+<img src="assets/ui/an-leet.svg" width="100%" alt="LeetCode: problems solved, easy, medium and hard counts, and contest rating"/>
+<img src="assets/ui/an-snake-head.svg" width="100%" alt="Contribution graph"/>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake.svg">
   <img alt="contribution snake" src="https://raw.githubusercontent.com/dipanshubatra/dipanshubatra/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
-
-<img src="assets/ui/analytics-sheet.svg" width="100%" alt="GitHub analytics sheet: 1,782 commits, 754 pull requests, 39 public repos, 4,757 contributions since April 2025. Languages: Java 33%, Python 33%, CSS 11%, HTML 11%, JavaScript 11%. Longest streak 98 days, current streak 4 days. LeetCode 351 solved: 140 easy, 184 medium, 27 hard, contest rating 1381. 5 stars, 10 followers."/>
 
 </div>
 

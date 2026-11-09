@@ -84,14 +84,16 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-oss.svg" width="100%" alt="Open Source"/>
+<img src="assets/ui/hd-oss.svg" width="100%" alt="Open Source"/>
 <br/>
 
 <div align="center">
 
-<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-note-1.svg" width="100%" alt="MedTrack, 94 commits"/></a>
-<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-note-2.svg" width="100%" alt="MailGenie, 24 commits"/></a>
-<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-note-3.svg" width="100%" alt="16+ open-source projects in the Java and Spring ecosystem"/></a>
+<img src="assets/ui/oss-graph.svg" width="100%" alt="Git graph of open-source contributions: MedTrack branch with 94 commits, MailGenie branch with 24 commits, and 16+ other repos in the Java and Spring ecosystem, all merging into main."/>
+
+<a href="https://github.com/kRamu81/MedTrack_Application"><img src="assets/ui/oss-btn-medtrack.svg" height="50" alt="MedTrack repo"/></a>
+<a href="https://github.com/Nicode2707/MailGenie"><img src="assets/ui/oss-btn-mailgenie.svg" height="50" alt="MailGenie repo"/></a>
+<a href="https://github.com/dipanshubatra"><img src="assets/ui/oss-btn-all.svg" height="50" alt="All my repos"/></a>
 
 </div>
 

@@ -68,7 +68,7 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-journey.svg" width="100%" alt="Journey"/>
+<img src="assets/ui/hd-journey.svg" width="100%" alt="Journey"/>
 <br/>
 
 <div align="center">

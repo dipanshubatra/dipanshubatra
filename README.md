@@ -29,21 +29,10 @@
 
 <br/><br/>
 
-<img src="assets/ui/t-ecsoc.svg" width="100%" alt="ECSoC '26"/>
+<img src="assets/ui/hd-ecsoc.svg" width="100%" alt="ECSoC '26"/>
 <br/>
 
-<div align="center">
-
-**Elite Coders Summer of Code 2026: Global Rank 4 · Tier 1 Developer · full badge progression to Master**
-
-<img src="assets/ecsoc/card-contributor.svg" width="150" alt="Contributor"/>
-<img src="assets/ecsoc/card-2.svg" width="150" alt="Level 2"/>
-<img src="assets/ecsoc/card-3.svg" width="150" alt="Level 3"/>
-<img src="assets/ecsoc/card-4.svg" width="150" alt="Level 4"/>
-<img src="assets/ecsoc/card-5.svg" width="150" alt="Level 5"/>
-<img src="assets/ecsoc/card-6.svg" width="150" alt="Master"/>
-
-</div>
+<img src="assets/ui/ecsoc-map.svg" width="100%" alt="Elite Coders Summer of Code 2026: Global Rank 4, Tier 1 Developer. Full badge progression from Contributor through Levels 2 to 5 to Master, 6 of 6 badges unlocked."/>
 
 <br/><br/>
 

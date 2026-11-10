@@ -41,13 +41,14 @@
 
 <div align="center">
 
-<a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/rcpt-novamart.svg" width="49%" alt="NovaMart receipt: 0% error rate, 182ms average latency, 326ms P95, 5,250+ concurrent requests"/></a>
-<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/rcpt-cronvault.svg" width="49%" alt="CronVault receipt: exactly-once runs, 9 RBAC permissions, 60s crash recovery"/></a>
+<a href="https://martnova.vercel.app/"><img src="assets/ui/tix-novamart.svg" width="100%" alt="NovaMart ticket: 0% error rate, 182ms average and 326ms P95 latency, 5,250+ concurrent requests, zero double-charges. Java 17, Spring Boot 3, Redis, PostgreSQL."/></a>
 
 <a href="https://martnova.vercel.app/"><img src="assets/ui/lk-nova-live.svg" height="68" alt="NovaMart live project"/></a>
 <a href="https://github.com/dipanshubatra/nova-mart-ecommerce"><img src="assets/ui/lk-nova-src.svg" height="68" alt="NovaMart source code"/></a>
-<br/>
-<a href="https://cron-vaul-frontend-nine.vercel.app"><img src="assets/ui/lk-cron-live.svg" height="68" alt="CronVault live project"/></a>
+
+<a href="https://cron-vaul-frontend.vercel.app"><img src="assets/ui/tix-cronvault.svg" width="100%" alt="CronVault ticket: exactly-once runs, 9 RBAC permissions, 60 second crash recovery, zero duplicate runs. Java 21, Spring Boot 3, MySQL, Redis and Lua."/></a>
+
+<a href="https://cron-vaul-frontend.vercel.app"><img src="assets/ui/lk-cron-live.svg" height="68" alt="CronVault live project"/></a>
 <img src="assets/ui/lk-cron-private.svg" height="68" alt="CronVault source code is private"/>
 
 </div>
